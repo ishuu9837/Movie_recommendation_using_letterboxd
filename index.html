@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I⚡H — Movie Intelligence</title>
+<meta name="description" content="AI-powered movie recommendations by genre and language. Trained on 9,000+ Letterboxd films.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #07090e;
+  --surface: #0d1117;
+  --surface2: #161b22;
+  --surface3: #1c2128;
+  --border: #21262d;
+  --border2: #2d333b;
+  --accent: #f0c040;
+  --accent-dim: rgba(240,192,64,0.12);
+  --accent-border: rgba(240,192,64,0.3);
+  --accent2: #ff6b35;
+  --accent2-dim: rgba(255,107,53,0.1);
+  --text: #e6edf3;
+  --text-muted: #7d8590;
+  --text-dim: #2d333b;
+  --radius: 14px;
+  --lang-accent: #58a6ff;
+  --lang-dim: rgba(88,166,255,0.1);
+  --lang-border: rgba(88,166,255,0.25);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+
+/* Grain */
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.5}
+
+/* Ambient */
+.bg-glow{position:fixed;border-radius:50%;filter:blur(140px);pointer-events:none;z-index:0}
+.bg-glow-1{width:700px;height:700px;background:rgba(240,192,64,0.035);top:-250px;left:-250px}
+.bg-glow-2{width:600px;height:600px;background:rgba(255,107,53,0.03);bottom:-200px;right:-200px}
+.bg-glow-3{width:400px;height:400px;background:rgba(88,166,255,0.025);top:40%;left:50%;transform:translateX(-50%)}
+
+.container{max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+
+/* ── Nav ── */
+nav{display:flex;align-items:center;justify-content:space-between;padding:28px 0;border-bottom:1px solid var(--border)}
+.brand{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;letter-spacing:.06em;color:var(--accent);text-shadow:0 0 40px rgba(240,192,64,0.35);cursor:default;display:flex;align-items:center;gap:2px}
+.brand .bolt{color:var(--accent2);animation:pulseBolt 2s ease-in-out infinite}
+.nav-pills{display:flex;gap:10px}
+.nav-pill{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.08em;color:var(--text-muted);border:1px solid var(--border);padding:5px 12px;border-radius:20px}
+.nav-pill b{color:var(--accent)}
+
+/* ── Hero ── */
+.hero{padding:72px 0 52px;text-align:center}
+.hero-eyebrow{font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent2);margin-bottom:18px;opacity:0;animation:up .5s ease forwards .1s}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(3.2rem,9vw,7.5rem);line-height:.92;letter-spacing:.02em;margin-bottom:22px;opacity:0;animation:up .5s ease forwards .2s}
+.hero h1 .outline{color:transparent;-webkit-text-stroke:1.5px var(--accent)}
+.hero p{font-size:1rem;color:var(--text-muted);max-width:480px;margin:0 auto 48px;line-height:1.75;opacity:0;animation:up .5s ease forwards .3s}
+
+/* ── Panel ── */
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:32px;margin-bottom:14px;position:relative;overflow:hidden;opacity:0;animation:up .5s ease forwards .4s}
+.panel::before{content:'';position:absolute;top:0;left:0;right:0;height:1.5px}
+.panel.genre-panel::before{background:linear-gradient(90deg,var(--accent),var(--accent2) 60%,transparent)}
+.panel.lang-panel::before{background:linear-gradient(90deg,var(--lang-accent),rgba(88,166,255,0) 70%)}
+
+.panel-label{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.panel-label .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0}
+.panel-label.lang-label .dot{background:var(--lang-accent)}
+.panel-label::after{content:'';flex:1;height:1px;background:var(--border)}
+
+/* ── Genre chips ── */
+.chip-grid{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.chip{font-size:.82rem;font-weight:500;padding:7px 16px;border-radius:100px;border:1.5px solid var(--border);background:var(--surface2);color:var(--text-muted);cursor:pointer;transition:all .18s ease;user-select:none;display:flex;align-items:center;gap:6px;white-space:nowrap}
+.chip:hover{transform:translateY(-1px)}
+.chip.genre-chip:hover{border-color:var(--accent);color:var(--text)}
+.chip.genre-chip.active{border-color:var(--accent);background:var(--accent-dim);color:var(--accent);box-shadow:0 0 14px rgba(240,192,64,.18)}
+.chip.lang-chip:hover{border-color:var(--lang-accent);color:var(--text)}
+.chip.lang-chip.active{border-color:var(--lang-accent);background:var(--lang-dim);color:var(--lang-accent);box-shadow:0 0 14px rgba(88,166,255,.15)}
+
+/* ── Controls ── */
+.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn-primary{font-family:'Bebas Neue',sans-serif;font-size:1.05rem;letter-spacing:.1em;padding:13px 34px;background:var(--accent);color:#07090e;border:none;border-radius:10px;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:8px}
+.btn-primary:hover{background:#ffd060;transform:translateY(-2px);box-shadow:0 10px 28px rgba(240,192,64,.28)}
+.btn-primary:active{transform:none}
+.btn-primary:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+.btn-ghost{font-size:.82rem;font-weight:500;padding:9px 18px;background:transparent;color:var(--text-muted);border:1.5px solid var(--border);border-radius:10px;cursor:pointer;transition:all .18s}
+.btn-ghost:hover{border-color:var(--border2);color:var(--text)}
+
+.select-wrap{display:flex;align-items:center;gap:8px;background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:5px 5px 5px 14px}
+.select-wrap label{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.08em;color:var(--text-muted);white-space:nowrap}
+.select-wrap select{background:transparent;border:none;color:var(--text);font-family:'DM Sans',sans-serif;font-size:.82rem;cursor:pointer;outline:none;padding:4px 6px}
+.select-wrap select option{background:var(--surface2)}
+
+.sel-summary{font-family:'DM Mono',monospace;font-size:.72rem;color:var(--text-muted);margin-left:auto;display:flex;gap:16px}
+.sel-summary b{color:var(--accent)}
+.sel-summary .lb{color:var(--lang-accent)}
+
+/* ── Loading ── */
+.progress{height:2px;background:var(--border);border-radius:1px;overflow:hidden;margin:20px 0;display:none}
+.progress.on{display:block}
+.progress-bar{height:100%;width:30%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:1px;animation:slide 1.2s ease-in-out infinite}
+
+/* ── Results ── */
+#results{margin-top:40px;padding-bottom:80px}
+.results-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:10px}
+.results-title{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:.04em}
+.results-meta{font-family:'DM Mono',monospace;font-size:.72rem;color:var(--text-muted)}
+.results-meta b{color:var(--accent)}
+
+.filter-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:26px}
+.ftag{font-size:.7rem;padding:3px 11px;border-radius:20px;font-family:'DM Mono',monospace}
+.ftag.gtag{background:var(--accent-dim);border:1px solid var(--accent-border);color:var(--accent)}
+.ftag.ltag{background:var(--lang-dim);border:1px solid var(--lang-border);color:var(--lang-accent)}
+
+/* ── Grid ── */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:22px;transition:all .22s ease;position:relative;overflow:hidden;opacity:0;transform:translateY(16px);animation:cardIn .35s ease forwards}
+.card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(240,192,64,.04),transparent);opacity:0;transition:opacity .22s}
+.card:hover{border-color:rgba(240,192,64,.35);transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.45),0 0 40px rgba(240,192,64,.08)}
+.card:hover::before{opacity:1}
+
+.card-num{font-family:'Bebas Neue',sans-serif;font-size:3.6rem;position:absolute;top:10px;right:16px;color:var(--text-dim);line-height:1;pointer-events:none;user-select:none}
+
+.card-head{margin-bottom:10px;padding-right:52px}
+.card-title{font-family:'Bebas Neue',sans-serif;font-size:1.35rem;letter-spacing:.03em;line-height:1.15;color:var(--text);margin-bottom:4px}
+.card-meta{font-size:.75rem;color:var(--text-muted);display:flex;flex-wrap:wrap;gap:10px}
+.card-meta span{display:flex;align-items:center;gap:3px}
+
+.lang-pill{display:inline-flex;align-items:center;gap:5px;font-size:.68rem;font-family:'DM Mono',monospace;padding:2px 10px;border-radius:20px;background:var(--lang-dim);border:1px solid var(--lang-border);color:var(--lang-accent);margin-bottom:10px}
+
+.rating-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.rating-badge{display:flex;align-items:center;gap:5px;background:rgba(240,192,64,.13);border:1px solid rgba(240,192,64,.28);color:var(--accent);font-family:'DM Mono',monospace;font-size:.82rem;font-weight:500;padding:3px 11px;border-radius:6px}
+.stars{color:var(--accent2);font-size:.72rem;letter-spacing:.05em}
+
+.match-wrap{margin-bottom:12px}
+.match-lbl{display:flex;justify-content:space-between;font-family:'DM Mono',monospace;font-size:.65rem;color:var(--text-muted);margin-bottom:5px}
+.match-lbl b{color:var(--accent)}
+.bar{height:3px;background:var(--border);border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:2px;transition:width .9s cubic-bezier(.4,0,.2,1)}
+
+.genres-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px}
+.gbadge{font-size:.67rem;padding:2px 9px;border-radius:20px;border:1px solid var(--border);color:var(--text-muted);background:var(--surface2)}
+.gbadge.match{border-color:var(--accent-border);color:var(--accent);background:var(--accent-dim)}
+
+.desc{font-size:.8rem;color:var(--text-muted);line-height:1.65;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
+.card-foot{margin-top:14px;padding-top:12px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.watches{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--text-dim)}
+.lb-link{font-size:.72rem;color:var(--accent2);text-decoration:none;font-weight:500;opacity:.65;transition:opacity .18s;display:flex;align-items:center;gap:3px}
+.lb-link:hover{opacity:1}
+
+/* ── Empty ── */
+.empty{text-align:center;padding:80px 24px}
+.empty .ico{font-size:3rem;margin-bottom:16px}
+.empty h3{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;margin-bottom:8px;color:var(--text)}
+.empty p{color:var(--text-muted);font-size:.9rem}
+
+/* ── Footer ── */
+footer{border-top:1px solid var(--border);padding:36px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.foot-brand{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--text-dim)}
+.foot-brand span{color:rgba(240,192,64,.4)}
+footer p{font-size:.75rem;color:var(--text-dim)}
+
+/* ── Keyframes ── */
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@keyframes cardIn{to{opacity:1;transform:none}}
+@keyframes slide{0%{transform:translateX(-100%)}100%{transform:translateX(400%)}}
+@keyframes pulseBolt{0%,100%{text-shadow:0 0 20px rgba(255,107,53,.4)}50%{text-shadow:0 0 40px rgba(255,107,53,.8)}}
+
+/* ── Responsive ── */
+@media(max-width:640px){
+  .hero h1{font-size:3rem}
+  .panel{padding:20px}
+  .grid{grid-template-columns:1fr}
+  .controls{flex-direction:column;align-items:stretch}
+  .btn-primary{justify-content:center}
+  .nav-pills{display:none}
+  .sel-summary{margin-left:0}
+}
+</style>
+</head>
+<body>
+<div class="bg-glow bg-glow-1"></div>
+<div class="bg-glow bg-glow-2"></div>
+<div class="bg-glow bg-glow-3"></div>
+
+<div class="container">
+<!-- Nav -->
+<nav>
+  <div class="brand">I<span class="bolt">⚡</span>H</div>
+  <div class="nav-pills">
+    <div class="nav-pill">FILMS <b id="n-movies">—</b></div>
+    <div class="nav-pill">AVG ★ <b id="n-rating">—</b></div>
+    <div class="nav-pill">GENRES <b>19</b></div>
+    <div class="nav-pill">LANGUAGES <b>27</b></div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-eyebrow">⚡ Genre · Language · AI Intelligence</div>
+  <h1>Discover Your<br><span class="outline">Perfect Film</span></h1>
+  <p>Select genres and filter by language. Our ML model surfaces the best-matched films from 9,000+ Letterboxd titles — ranked by relevance, rating, and popularity.</p>
+</section>
+
+<!-- Genre Panel -->
+<div class="panel genre-panel">
+  <div class="panel-label"><span class="dot"></span>Select Genres</div>
+  <div class="chip-grid" id="genre-grid"></div>
+</div>
+
+<!-- Language Panel -->
+<div class="panel lang-panel" style="animation-delay:.5s">
+  <div class="panel-label lang-label"><span class="dot"></span>Filter by Language <span style="font-size:.65rem;color:var(--text-dim);font-family:'DM Mono',monospace;letter-spacing:0;">(optional — leave empty for all)</span></div>
+  <div class="chip-grid" id="lang-grid"></div>
+</div>
+
+<!-- Controls -->
+<div class="panel" style="animation-delay:.55s;padding:20px 28px">
+  <div class="controls">
+    <button class="btn-primary" id="btn-search" onclick="doSearch()">⚡ &nbsp;Find Movies</button>
+    <button class="btn-ghost" onclick="clearAll()">Clear All</button>
+
+    <div class="select-wrap">
+      <label>SORT</label>
+      <select id="sort-sel">
+        <option value="relevance">Relevance</option>
+        <option value="rating">Highest Rated</option>
+        <option value="popularity">Most Watched</option>
+      </select>
+    </div>
+    <div class="select-wrap">
+      <label>SHOW</label>
+      <select id="count-sel">
+        <option value="10">10 films</option>
+        <option value="20" selected>20 films</option>
+        <option value="30">30 films</option>
+        <option value="50">50 films</option>
+      </select>
+    </div>
+
+    <div class="sel-summary">
+      <span><b id="gcount">0</b> genres</span>
+      <span><span class="lb" id="lcount">0</span> languages</span>
+    </div>
+  </div>
+</div>
+
+<!-- Progress -->
+<div class="progress" id="progress"><div class="progress-bar"></div></div>
+
+<!-- Results -->
+<div id="results"></div>
+</div>
+
+<!-- Footer -->
+<div class="container">
+<footer>
+  <div class="foot-brand">I<span>⚡</span>H</div>
+  <p>ML Model: MultiLabel Binarizer + Cosine Similarity + Rating Weighting</p>
+  <p>Trained on 9,411 Letterboxd films across 19 genres & 27 languages</p>
+</footer>
+</div>
+
+<script>
+// ── Data ─────────────────────────────────────────────────────────────────────
+const GENRES = ['Action','Adventure','Animation','Comedy','Crime','Documentary',
+  'Drama','Family','Fantasy','History','Horror','Music','Mystery','Romance',
+  'Science Fiction','Thriller','War','Western','TV Movie'];
+
+const GENRE_ICONS = {
+  Action:'⚔️',Adventure:'🗺️',Animation:'🎨',Comedy:'😂',Crime:'🔍',
+  Documentary:'📽️',Drama:'🎭',Family:'👨‍👩‍👧',Fantasy:'🧙',History:'📜',
+  Horror:'👻',Music:'🎵',Mystery:'🕵️',Romance:'❤️','Science Fiction':'🚀',
+  Thriller:'😱',War:'🎖️',Western:'🤠','TV Movie':'📺'
+};
+
+const LANGUAGES = [
+  'English','Japanese','French','Italian','Korean','Spanish','German',
+  'Chinese','Cantonese','Danish','Russian','Swedish','Polish','Portuguese',
+  'Romanian','Dutch','Persian','Norwegian','Arabic','Czech','Hungarian',
+  'Greek','Hindi','Indonesian','Thai','Turkish','Silent'
+];
+
+const LANG_FLAGS = {
+  English:'🇬🇧',Japanese:'🇯🇵',French:'🇫🇷',Italian:'🇮🇹',Korean:'🇰🇷',
+  Spanish:'🇪🇸',German:'🇩🇪',Chinese:'🇨🇳',Cantonese:'🇭🇰',Danish:'🇩🇰',
+  Russian:'🇷🇺',Swedish:'🇸🇪',Polish:'🇵🇱',Portuguese:'🇵🇹',Romanian:'🇷🇴',
+  Dutch:'🇳🇱',Persian:'🇮🇷',Norwegian:'🇳🇴',Arabic:'🇸🇦',Czech:'🇨🇿',
+  Hungarian:'🇭🇺',Greek:'🇬🇷',Hindi:'🇮🇳',Indonesian:'🇮🇩',Thai:'🇹🇭',
+  Turkish:'🇹🇷',Silent:'🎞️'
+};
+
+let selectedGenres = new Set();
+let selectedLangs = new Set();
+let MOVIES = null;
+
+// ── Build genre chips ─────────────────────────────────────────────────────────
+const gg = document.getElementById('genre-grid');
+GENRES.forEach(g => {
+  const c = document.createElement('button');
+  c.className = 'chip genre-chip';
+  c.dataset.val = g;
+  c.innerHTML = `${GENRE_ICONS[g]||''} ${g}`;
+  c.onclick = () => toggle(selectedGenres, g, c, 'gcount');
+  gg.appendChild(c);
+});
+
+// ── Build language chips ──────────────────────────────────────────────────────
+const lg = document.getElementById('lang-grid');
+LANGUAGES.forEach(l => {
+  const c = document.createElement('button');
+  c.className = 'chip lang-chip';
+  c.dataset.val = l;
+  c.innerHTML = `${LANG_FLAGS[l]||'🌐'} ${l}`;
+  c.onclick = () => toggle(selectedLangs, l, c, 'lcount');
+  lg.appendChild(c);
+});
+
+function toggle(set, val, el, counterId) {
+  if (set.has(val)) { set.delete(val); el.classList.remove('active'); }
+  else { set.add(val); el.classList.add('active'); }
+  document.getElementById(counterId).textContent = set.size;
+}
+
+function clearAll() {
+  selectedGenres.clear(); selectedLangs.clear();
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  document.getElementById('gcount').textContent = 0;
+  document.getElementById('lcount').textContent = 0;
+  document.getElementById('results').innerHTML = '';
+}
+
+// ── ML Engine (client-side cosine similarity) ─────────────────────────────────
+async function loadMovies() {
+  if (MOVIES) return MOVIES;
+  const r = await fetch('/public/movies_data.json');
+  MOVIES = await r.json();
+  document.getElementById('n-movies').textContent = MOVIES.length.toLocaleString();
+  const avg = (MOVIES.reduce((s,m)=>s+m.rating,0)/MOVIES.length).toFixed(2);
+  document.getElementById('n-rating').textContent = avg;
+  return MOVIES;
+}
+
+function cosSim(a, b) {
+  let dot=0, ma=0, mb=0;
+  for(let i=0;i<a.length;i++){dot+=a[i]*b[i];ma+=a[i]*a[i];mb+=b[i]*b[i];}
+  return ma&&mb ? dot/Math.sqrt(ma*mb) : 0;
+}
+
+function encode(genres) { return GENRES.map(g => genres.includes(g)?1:0); }
+
+function recommend(movies, genres, langs, topN, sortBy) {
+  const iv = encode(genres);
+  let pool = movies;
+  if (langs.length > 0) {
+    const ls = new Set(langs);
+    pool = movies.filter(m => ls.has(m.language||'Unknown'));
+  }
+  if (!pool.length) return [];
+
+  const rs = pool.map(m=>m.rating), ws = pool.map(m=>Math.log1p(m.watches||0));
+  const minR=Math.min(...rs),maxR=Math.max(...rs),minW=Math.min(...ws),maxW=Math.max(...ws);
+  const nr=r=>(r-minR)/(maxR-minR+1e-9), nw=w=>(w-minW)/(maxW-minW+1e-9);
+
+  const scored = pool.map(m=>{
+    const sim = cosSim(iv, encode(m.genres));
+    if(!sim) return null;
+    let score = sortBy==='rating' ? nr(m.rating) : sortBy==='popularity' ? nw(Math.log1p(m.watches||0)) : sim*(0.6+0.3*nr(m.rating)+0.1*nw(Math.log1p(m.watches||0)));
+    return {...m, matchScore:Math.round(sim*100), _score:score};
+  }).filter(Boolean);
+
+  return scored.sort((a,b)=>b._score-a._score).slice(0,topN);
+}
+
+// ── Search ────────────────────────────────────────────────────────────────────
+async function doSearch() {
+  if (!selectedGenres.size) { shake(document.getElementById('btn-search')); alert('Pick at least one genre!'); return; }
+  const btn = document.getElementById('btn-search');
+  const prog = document.getElementById('progress');
+  btn.disabled=true; btn.textContent='⏳  Analyzing…'; prog.classList.add('on');
+  document.getElementById('results').innerHTML = '';
+
+  try {
+    const movies = await loadMovies();
+    await new Promise(r=>setTimeout(r,350));
+    const genres = [...selectedGenres], langs = [...selectedLangs];
+    const topN = +document.getElementById('count-sel').value;
+    const sortBy = document.getElementById('sort-sel').value;
+    const res = recommend(movies, genres, langs, topN, sortBy);
+    render(res, genres, langs);
+    setTimeout(()=>document.getElementById('results').scrollIntoView({behavior:'smooth',block:'start'}),80);
+  } catch(e) {
+    document.getElementById('results').innerHTML=`<div class="empty"><div class="ico">⚠️</div><h3>Error</h3><p>${e.message}</p></div>`;
+  } finally {
+    btn.disabled=false; btn.innerHTML='⚡ &nbsp;Find Movies'; prog.classList.remove('on');
+  }
+}
+
+// ── Render ────────────────────────────────────────────────────────────────────
+function render(movies, genres, langs) {
+  if (!movies.length) {
+    document.getElementById('results').innerHTML=`<div class="empty"><div class="ico">🎬</div><h3>No Matches Found</h3><p>Try different genres or remove language filters.</p></div>`;
+    return;
+  }
+  const gtags = genres.map(g=>`<span class="ftag gtag">${GENRE_ICONS[g]||''} ${esc(g)}</span>`).join('');
+  const ltags = langs.map(l=>`<span class="ftag ltag">${LANG_FLAGS[l]||'🌐'} ${esc(l)}</span>`).join('');
+
+  const cards = movies.map((m,i)=>{
+    const delay = i*35+'ms';
+    const matched = m.genres.filter(g=>genres.includes(g));
+    const gbadges = m.genres.map(g=>`<span class="gbadge${matched.includes(g)?' match':''}">${g}</span>`).join('');
+    const stars = '★'.repeat(Math.min(5,Math.round(m.rating)));
+    const fmtW = n=> n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e3?(n/1e3).toFixed(0)+'K':String(n);
+    const lang = m.language && m.language!=='Unknown' ? `<div class="lang-pill">${LANG_FLAGS[m.language]||'🌐'} ${esc(m.language)}</div>` : '';
+    const lbLink = m.url ? `<a class="lb-link" href="${m.url}" target="_blank" rel="noopener">Letterboxd ↗</a>` : '';
+    const meta = [
+      m.year&&m.year!='N/A'?`<span>📅 ${m.year}</span>`:'',
+      m.director&&m.director!='Unknown'?`<span>🎬 ${esc(m.director)}</span>`:'',
+      m.runtime?`<span>⏱ ${m.runtime}m</span>`:'',
+    ].filter(Boolean).join('');
+    return `
+    <div class="card" style="animation-delay:${delay}">
+      <div class="card-num">${String(i+1).padStart(2,'0')}</div>
+      <div class="card-head">
+        <div class="card-title">${esc(m.title)}</div>
+        <div class="card-meta">${meta}</div>
+      </div>
+      ${lang}
+      <div class="rating-row">
+        <div class="rating-badge">⭐ ${m.rating.toFixed(2)}</div>
+        <span class="stars">${stars}</span>
+      </div>
+      <div class="match-wrap">
+        <div class="match-lbl"><span>Genre Match</span><b>${m.matchScore}%</b></div>
+        <div class="bar"><div class="bar-fill" style="width:${m.matchScore}%"></div></div>
+      </div>
+      <div class="genres-row">${gbadges}</div>
+      ${m.description?`<div class="desc">${esc(m.description)}</div>`:''}
+      <div class="card-foot">
+        <span class="watches">${m.watches?fmtW(m.watches)+' watches':''}</span>
+        ${lbLink}
+      </div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('results').innerHTML=`
+    <div class="results-hd">
+      <div class="results-title">Recommendations</div>
+      <div class="results-meta">Found <b>${movies.length}</b> films</div>
+    </div>
+    <div class="filter-tags">${gtags}${ltags}</div>
+    <div class="grid">${cards}</div>`;
+}
+
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function shake(el){el.style.animation='none';requestAnimationFrame(()=>{el.style.animation=''})}
+
+document.addEventListener('keydown',e=>{ if(e.key==='Enter'&&!e.target.closest('select,button')) doSearch(); });
+loadMovies().catch(()=>{});
+</script>
+</body>
+</html>
