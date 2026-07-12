@@ -1,118 +1,62 @@
-# I⚡H — Movie Intelligence Platform
+# MRS by Letterboxd
 
-> Movie Recommendation System Using Letterboxd with AI-powered suggestions by **genre** and **language**.  
-> Trained on 9,411 Letterboxd films · 19 genres · 27 languages.
+A lightweight, static movie discovery interface for browsing curated films and opening their Letterboxd pages.
 
-### Latest UI updates
-- Users can add custom movies directly from the homepage.
-- Added a **Recent Movies** section for **English** and **Telugu** releases from **2020–2026**.
+## What it does
 
----
+- Search movies by title, director, or genre
+- Filter by language and release period
+- Browse Telugu, Hindi, English, Tamil, Malayalam, Korean, and Japanese cinema
+- Explore genres including drama, romance, action, thriller, comedy, crime, science fiction, horror, animation, fantasy, and music
+- Open every recommendation through a coloured **View on Letterboxd** button
+- Submit a community recommendation with a Letterboxd film URL
+- Use an animated, responsive water-glass interface
 
-## 🚀 Deploy to Vercel (Step-by-Step)
+## Recommendation model features
 
-### Step 1 — Push to GitHub
+The current version is a client-side catalogue discovery model. It does not train or call a backend ML service.
 
-```bash
-# 1. Create a new repo on github.com (name it e.g. "ih-movies")
-# 2. In your terminal, navigate to this folder:
+| Feature | How it works |
+| --- | --- |
+| Keyword matching | Matches a search term against a film's title, director, and genres. |
+| Genre filtering | Filters the catalogue by the selected genre. |
+| Language filtering | Limits results to the selected cinema language. |
+| Period filtering | Lets visitors explore recent releases, the 2010s, or the 2000s. |
+| Community input | Adds a submitted Letterboxd recommendation to the current browser session. |
+| Letterboxd routing | Provides a direct link to the film's Letterboxd page. |
 
-cd IH_app_v2
+## Requirements
 
-# 3. Initialize git and push:
-git init
-git add .
-git commit -m "feat: initial I⚡H movie recommender"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/ih-movies.git
-git push -u origin main
-```
+This project is a single static HTML page.
 
-### Step 2 — Deploy on Vercel
+- A modern web browser
+- Internet access only for Google Fonts and outbound Letterboxd links
+- No Node.js, Python, database, build step, or API key is required
 
-1. Go to **[vercel.com](https://vercel.com)** and sign in with GitHub
-2. Click **"Add New Project"**
-3. Import your **ih-movies** repository
-4. Vercel auto-detects the config from `vercel.json`
-5. Click **Deploy** — done! ✅
+## Run locally
 
-Your site will be live at: `https://ih-movies.vercel.app`
-
-> **Note**: The Python API functions in `/api/` use Vercel's Python runtime.  
-> The ML inference runs client-side (JavaScript cosine similarity) for speed.  
-> The `/api/recommend` and `/api/stats` endpoints are available as serverless fallbacks.
-
----
-
-## 🧠 ML Model Architecture
-
-| Component | Detail |
-|---|---|
-| Algorithm | MultiLabel Binarizer + Cosine Similarity |
-| Feature | Binary genre vectors (19 dimensions) |
-| Scoring | 60% genre match · 30% normalized rating · 10% log-popularity |
-| Language filter | Pre-filter pool before scoring |
-| Dataset | 9,411 Letterboxd films |
-
----
-
-## 📁 Project Structure
-
-```
-IH_app_v2/
-├── index.html              ← Main frontend (static, no build needed)
-├── vercel.json             ← Vercel routing config
-├── requirements.txt        ← Python deps for Vercel serverless
-├── public/
-│   └── movies_data.json    ← Processed dataset (9,411 films)
-├── api/
-│   ├── recommend.py        ← POST /api/recommend (serverless)
-│   └── stats.py            ← GET /api/stats (serverless)
-└── README.md
-```
-
----
-
-## 🖥️ Local Development
+Open `index.html` directly in a browser, or serve the folder:
 
 ```bash
-# Simple static server (no Python needed — ML runs in browser)
-npx serve .
-# or
-python3 -m http.server 3000
-# Visit http://localhost:3000
+python3 -m http.server 8000
 ```
 
----
+Then visit `http://localhost:8000`.
 
-## 🔌 API Reference
+## Project structure
 
-### `POST /api/recommend`
-```json
-{
-  "genres": ["Action", "Thriller"],
-  "languages": ["English", "Korean"],
-  "top_n": 20,
-  "sort_by": "relevance"
-}
-```
-Response:
-```json
-{
-  "movies": [{ "title": "...", "rating": 4.1, "match_score": 100, ... }],
-  "total": 20,
-  "genres": ["Action", "Thriller"],
-  "languages": ["English", "Korean"]
-}
+```text
+.
+├── index.html         # MRS by Letterboxd frontend
+├── README.md          # Project documentation
+└── requirements.txt   # Documents that no Python packages are needed
 ```
 
-### `GET /api/stats`
-Returns dataset stats: total movies, avg rating, genre/language distribution.
+## Deployment
 
----
+Because the app is static, it can be deployed to GitHub Pages, Vercel, Netlify, or any static hosting provider. Set the published directory to the repository root.
 
-## 🌐 Supported Languages
-English · Japanese · French · Italian · Korean · Spanish · German · Chinese · Cantonese · Danish · Russian · Swedish · Polish · Portuguese · Romanian · Dutch · Persian · Norwegian · Arabic · Czech · Hungarian · Greek · Hindi · Indonesian · Thai · Turkish · Silent
+## Notes
 
-## 🎬 Supported Genres
-Action · Adventure · Animation · Comedy · Crime · Documentary · Drama · Family · Fantasy · History · Horror · Music · Mystery · Romance · Science Fiction · Thriller · War · Western · TV Movie
+- Community-submitted films are stored only in the active browser session; refreshing the page removes them.
+- Letterboxd details are not automatically fetched from the submitted URL. The user supplies the title and optional movie metadata.
