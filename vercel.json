@@ -1,6 +1,6 @@
 {
-  "version": 2,
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "functions": {
-    "api/recommend.py": { "runtime": "python3.12" }
+    "api/recommend.py": { "maxDuration": 10 }
   }
 }
