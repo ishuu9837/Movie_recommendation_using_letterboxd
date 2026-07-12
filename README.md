@@ -1,62 +1,39 @@
 # MRS by Letterboxd
 
-A lightweight, static movie discovery interface for browsing curated films and opening their Letterboxd pages.
+MRS by Letterboxd is a responsive movie discovery interface with a Python machine-learning recommendation backend.
 
-## What it does
+## ML recommendation backend
 
-- Search movies by title, director, or genre
-- Filter by language and release period
-- Browse Telugu, Hindi, English, Tamil, Malayalam, Korean, and Japanese cinema
-- Explore genres including drama, romance, action, thriller, comedy, crime, science fiction, horror, animation, fantasy, and music
-- Open every recommendation through a coloured **View on Letterboxd** button
-- Submit a community recommendation with a Letterboxd film URL
-- Use an animated, responsive water-glass interface
+`api/recommend.py` is a Vercel serverless API. It uses scikit-learn's `MultiLabelBinarizer` to convert each movie's genres into a feature vector, then ranks matching movies with cosine similarity.
 
-## Recommendation model features
+The final recommendation score is:
 
-The current version is a client-side catalogue discovery model. It does not train or call a backend ML service.
+- 75% genre cosine-similarity score
+- 25% normalized Letterboxd rating
 
-| Feature | How it works |
-| --- | --- |
-| Keyword matching | Matches a search term against a film's title, director, and genres. |
-| Genre filtering | Filters the catalogue by the selected genre. |
-| Language filtering | Limits results to the selected cinema language. |
-| Period filtering | Lets visitors explore recent releases, the 2010s, or the 2000s. |
-| Community input | Adds a submitted Letterboxd recommendation to the current browser session. |
-| Letterboxd routing | Provides a direct link to the film's Letterboxd page. |
+Language, period, and keyword filters are applied before ranking. The endpoint accepts a JSON request at `POST /api/recommend` and returns ranked movies with a `match_score`.
 
 ## Requirements
 
-This project is a single static HTML page.
+```bash
+pip install -r requirements.txt
+```
 
-- A modern web browser
-- Internet access only for Google Fonts and outbound Letterboxd links
-- No Node.js, Python, database, build step, or API key is required
+- Python 3.12 for the Vercel serverless function
+- `numpy`
+- `scikit-learn`
+
+The frontend remains usable offline or on static hosts: it falls back to its built-in browser filters if the ML API is unavailable.
 
 ## Run locally
 
-Open `index.html` directly in a browser, or serve the folder:
+Open `index.html` in a browser for the static interface. To test the ML API, deploy to Vercel or use a local Vercel development environment:
 
 ```bash
-python3 -m http.server 8000
+npm install -g vercel
+vercel dev
 ```
 
-Then visit `http://localhost:8000`.
+## Deploy
 
-## Project structure
-
-```text
-.
-├── index.html         # MRS by Letterboxd frontend
-├── README.md          # Project documentation
-└── requirements.txt   # Documents that no Python packages are needed
-```
-
-## Deployment
-
-Because the app is static, it can be deployed to GitHub Pages, Vercel, Netlify, or any static hosting provider. Set the published directory to the repository root.
-
-## Notes
-
-- Community-submitted films are stored only in the active browser session; refreshing the page removes them.
-- Letterboxd details are not automatically fetched from the submitted URL. The user supplies the title and optional movie metadata.
+Import the GitHub repository into Vercel. Vercel detects `vercel.json`, installs `requirements.txt`, and exposes the ML endpoint at `/api/recommend`.
