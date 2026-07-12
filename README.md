@@ -1,7 +1,11 @@
 # I⚡H — Movie Intelligence Platform
 
-> AI-powered movie recommendations by **genre** and **language**.  
+> Movie Recommendation System Using Letterboxd with AI-powered suggestions by **genre** and **language**.  
 > Trained on 9,411 Letterboxd films · 19 genres · 27 languages.
+
+### Latest UI updates
+- Users can add custom movies directly from the homepage.
+- Added a **Recent Movies** section for **English** and **Telugu** releases from **2020–2026**.
 
 ---
 

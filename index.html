@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>I⚡H — Movie Intelligence</title>
+<title>Movie Recommendation System Using Letterboxd</title>
 <meta name="description" content="AI-powered movie recommendations by genre and language. 9,000+ Letterboxd films.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -235,11 +235,75 @@ nav{
 .fs-item b.bl{color:var(--lang-accent)}
 
 /* ═══════════════════════════════════════
+   ADD MOVIE PANEL
+═══════════════════════════════════════ */
+.add-movie-form{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:10px;
+}
+.field{
+  display:flex;flex-direction:column;gap:6px;
+}
+.field label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);
+}
+.field input,.field select{
+  width:100%;padding:10px 12px;border-radius:10px;
+  border:1px solid var(--border2);background:var(--surface2);color:var(--text);
+  outline:none;font-family:'Space Grotesk',sans-serif;font-size:.86rem;
+}
+.field input:focus,.field select:focus{border-color:var(--accent-border)}
+.add-movie-actions{display:flex;align-items:flex-end}
+.btn-add-movie{
+  width:100%;padding:12px 16px;border-radius:10px;border:1px solid var(--accent-border);
+  background:var(--accent-dim);color:var(--accent);font-weight:700;cursor:pointer;transition:all .15s ease;
+}
+.btn-add-movie:hover{background:rgba(232,184,75,0.18);transform:translateY(-1px)}
+.add-movie-msg{
+  margin-top:10px;min-height:18px;
+  font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.04em;color:var(--text-muted);
+}
+.add-movie-msg.ok{color:var(--green)}
+.add-movie-msg.err{color:var(--accent2)}
+
+/* ═══════════════════════════════════════
    PROGRESS
 ═══════════════════════════════════════ */
 .progress{height:2px;background:var(--border);border-radius:1px;overflow:hidden;margin:8px 0;display:none}
 .progress.on{display:block}
 .progress-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2),var(--lang-accent));border-radius:1px;animation:progSlide 1.4s ease-in-out infinite;background-size:200%}
+
+/* ── Recent movies ── */
+.recent-section{margin-top:24px}
+.recent-head{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;
+  margin-bottom:14px;
+}
+.recent-title{
+  font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.05em;color:var(--text);
+}
+.recent-note{
+  font-family:'JetBrains Mono',monospace;font-size:.65rem;letter-spacing:.06em;color:var(--text-muted);
+}
+.recent-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;
+}
+.recent-card{
+  background:var(--surface2);border:1px solid var(--border);border-radius:12px;
+  padding:12px;
+}
+.recent-movie-title{
+  font-weight:700;font-size:.95rem;color:var(--text);line-height:1.25;
+}
+.recent-meta{
+  margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;
+  font-family:'JetBrains Mono',monospace;font-size:.62rem;color:var(--text-muted);
+}
+.recent-pill{
+  padding:3px 8px;border-radius:100px;border:1px solid var(--border2);background:var(--surface3);
+}
 
 /* ═══════════════════════════════════════
    RESULTS SECTION
@@ -471,6 +535,7 @@ footer{
   .btn-find,.btn-clear{justify-content:center}
   .filter-summary{margin-left:0}
   .panel{padding:18px}
+  .add-movie-actions{align-items:stretch}
 }
 </style>
 </head>
@@ -487,7 +552,7 @@ footer{
     </div>
     <div class="logo-text-group">
       <div class="logo-main">I<span>ntelligent</span> H<span>ub</span></div>
-      <div class="logo-sub">Movie Intelligence Platform</div>
+      <div class="logo-sub">Movie Recommendation System Using Letterboxd</div>
     </div>
   </div>
   <div class="nav-right">
@@ -505,7 +570,7 @@ footer{
   <div class="hero-bg-text">I⚡H</div>
   <div class="hero-kicker">⚡ AI-Powered · Genre & Language Intelligence</div>
   <h1>Find Your<br><span class="line2">Perfect Film.</span></h1>
-  <p class="hero-desc">Select genres and filter by language. Our cosine-similarity ML model scores 9,411 films against your taste — ranked by relevance, quality, and popularity.</p>
+  <p class="hero-desc">Select genres and languages to get Letterboxd-powered recommendations. You can now also add your own movies and browse recent English and Telugu releases (2020–2026).</p>
   <div class="hero-stats">
     <div class="hstat"><div class="hstat-num">9,411</div><div class="hstat-lbl">Films Indexed</div></div>
     <div class="hstat-divider"></div>
@@ -543,6 +608,40 @@ footer{
   <div class="chip-grid" id="lang-grid"></div>
 </div>
 
+<!-- ═══════ ADD MOVIE PANEL ═══════ -->
+<div class="panel" style="animation-delay:.58s">
+  <div class="panel-accent-bar gold"></div>
+  <div class="panel-header">
+    <div class="panel-title"><span class="pdot gold"></span>Add Your Movie</div>
+  </div>
+  <div class="add-movie-form">
+    <div class="field">
+      <label for="add-title">Title *</label>
+      <input id="add-title" type="text" placeholder="Movie title">
+    </div>
+    <div class="field">
+      <label for="add-year">Release Year</label>
+      <input id="add-year" type="number" min="1900" max="2026" placeholder="2024">
+    </div>
+    <div class="field">
+      <label for="add-language">Language</label>
+      <select id="add-language"></select>
+    </div>
+    <div class="field">
+      <label for="add-rating">Rating (0 to 5)</label>
+      <input id="add-rating" type="number" min="0" max="5" step="0.1" placeholder="4.2">
+    </div>
+    <div class="field">
+      <label for="add-genres">Genres (comma-separated)</label>
+      <input id="add-genres" type="text" placeholder="Action, Drama">
+    </div>
+    <div class="add-movie-actions">
+      <button class="btn-add-movie" id="btn-add-movie" type="button">Add Movie</button>
+    </div>
+  </div>
+  <div class="add-movie-msg" id="add-movie-msg"></div>
+</div>
+
 <!-- ═══════ CONTROLS ═══════ -->
 <div class="controls-bar">
   <button class="btn-find" id="btn-search" onclick="doSearch()">
@@ -578,6 +677,15 @@ footer{
 
 <!-- Progress -->
 <div class="progress" id="progress"><div class="progress-fill"></div></div>
+
+<!-- Recent Movies -->
+<section class="recent-section">
+  <div class="recent-head">
+    <h2 class="recent-title">Recent Movies · English & Telugu</h2>
+    <div class="recent-note">Released between 2020 and 2026</div>
+  </div>
+  <div class="recent-grid" id="recent-grid"></div>
+</section>
 
 <!-- Results -->
 <div id="results"></div>
@@ -669,6 +777,20 @@ const LANG_FLAGS = {
   Silent:'🎞️'
 };
 
+const CUSTOM_MOVIES_KEY = 'ih_custom_movies_v1';
+const RECENT_FALLBACK = [
+  {title:'Dune',year:2021,language:'English',rating:4.0},
+  {title:'Top Gun: Maverick',year:2022,language:'English',rating:4.1},
+  {title:'Oppenheimer',year:2023,language:'English',rating:4.3},
+  {title:'The Batman',year:2022,language:'English',rating:4.0},
+  {title:'Poor Things',year:2023,language:'English',rating:4.1},
+  {title:'RRR',year:2022,language:'Telugu',rating:4.2},
+  {title:'Pushpa: The Rise',year:2021,language:'Telugu',rating:3.8},
+  {title:'Salaar',year:2023,language:'Telugu',rating:3.6},
+  {title:'Hanu-Man',year:2024,language:'Telugu',rating:3.7},
+  {title:'Kalki 2898 AD',year:2024,language:'Telugu',rating:3.9}
+];
+
 let selectedGenres = new Set();
 let selectedLangs = new Set();
 let MOVIES = null;
@@ -722,13 +844,145 @@ function clearAll() {
   document.getElementById('results').innerHTML = '';
 }
 
+function parseYear(year) {
+  if (typeof year === 'number') return year;
+  const m = String(year || '').match(/\d{4}/);
+  return m ? Number(m[0]) : NaN;
+}
+
+function getStoredCustomMovies() {
+  const raw = localStorage.getItem(CUSTOM_MOVIES_KEY);
+  if (!raw) return [];
+  try {
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (error) {
+    console.error('Invalid stored custom movies. Clearing saved value.', error);
+    localStorage.removeItem(CUSTOM_MOVIES_KEY);
+    return [];
+  }
+}
+
+function saveCustomMovie(movie) {
+  const current = getStoredCustomMovies();
+  current.push(movie);
+  localStorage.setItem(CUSTOM_MOVIES_KEY, JSON.stringify(current));
+}
+
+function populateAddMovieLanguages() {
+  const sel = document.getElementById('add-language');
+  sel.innerHTML = LANGUAGES.map(lang => `<option value="${esc(lang)}">${esc(lang)}</option>`).join('');
+  sel.value = 'English';
+}
+
+function addMovie() {
+  const title = document.getElementById('add-title').value.trim();
+  const yearRaw = document.getElementById('add-year').value.trim();
+  const language = document.getElementById('add-language').value;
+  const ratingRaw = document.getElementById('add-rating').value.trim();
+  const genresRaw = document.getElementById('add-genres').value.trim();
+  const msg = document.getElementById('add-movie-msg');
+
+  msg.className = 'add-movie-msg';
+  if (!title) {
+    msg.classList.add('err');
+    msg.textContent = 'Title is required.';
+    return;
+  }
+
+  const year = yearRaw ? Number(yearRaw) : 'N/A';
+  if (yearRaw && (!Number.isInteger(year) || year < 1900 || year > 2026)) {
+    msg.classList.add('err');
+    msg.textContent = 'Year must be between 1900 and 2026.';
+    return;
+  }
+
+  const rating = ratingRaw ? Number(ratingRaw) : 3.5;
+  if (Number.isNaN(rating) || rating < 0 || rating > 5) {
+    msg.classList.add('err');
+    msg.textContent = 'Rating must be between 0 and 5.';
+    return;
+  }
+
+  const genres = genresRaw
+    ? genresRaw.split(',').map(g => g.trim()).filter(Boolean)
+    : ['Drama'];
+
+  const cleanedGenres = genres.filter(g => GENRES.includes(g));
+  if (!cleanedGenres.length) {
+    msg.classList.add('err');
+    msg.textContent = 'Use valid genres (example: Action, Drama, Thriller).';
+    return;
+  }
+
+  const movie = {
+    title,
+    year,
+    director: 'User Added',
+    genres: cleanedGenres,
+    language,
+    rating: Number(rating.toFixed(1)),
+    description: 'Added by user.',
+    runtime: null,
+    watches: 0,
+    url: ''
+  };
+
+  loadMovies();
+  MOVIES.push(movie);
+  saveCustomMovie(movie);
+  renderRecentMovies();
+  document.getElementById('n-movies').textContent = MOVIES.length.toLocaleString();
+
+  ['add-title','add-year','add-rating','add-genres'].forEach(id => { document.getElementById(id).value = ''; });
+  document.getElementById('add-language').value = 'English';
+
+  msg.classList.add('ok');
+  msg.textContent = `Added "${title}" successfully.`;
+}
+
+function getRecentMovies() {
+  loadMovies();
+  const filtered = MOVIES
+    .filter(m => ['English', 'Telugu'].includes(m.language))
+    .filter(m => {
+      const y = parseYear(m.year);
+      return Number.isInteger(y) && y >= 2020 && y <= 2026;
+    })
+    .sort((a, b) => {
+      const yb = parseYear(b.year) || 0;
+      const ya = parseYear(a.year) || 0;
+      return yb - ya || (b.rating || 0) - (a.rating || 0);
+    });
+
+  const seen = new Set(filtered.map(m => m.title.toLowerCase()));
+  const fallback = RECENT_FALLBACK.filter(m => !seen.has(m.title.toLowerCase()));
+  return [...filtered, ...fallback].slice(0, 10);
+}
+
+function renderRecentMovies() {
+  const root = document.getElementById('recent-grid');
+  const movies = getRecentMovies();
+  root.innerHTML = movies.map(m => `
+    <article class="recent-card">
+      <div class="recent-movie-title">${esc(m.title)}</div>
+      <div class="recent-meta">
+        <span class="recent-pill">📅 ${esc(m.year)}</span>
+        <span class="recent-pill">${LANG_FLAGS[m.language]||'🌐'} ${esc(m.language)}</span>
+        <span class="recent-pill">★ ${(m.rating || 0).toFixed(1)}</span>
+      </div>
+    </article>
+  `).join('');
+}
+
 // ── ML Engine ────────────────────────────────────────────────────────────────
 function loadMovies() {
   if (MOVIES) return MOVIES;
-  MOVIES = MOVIES_DATA;
+  MOVIES = [...MOVIES_DATA, ...getStoredCustomMovies()];
   document.getElementById('n-movies').textContent = MOVIES.length.toLocaleString();
   const avg = (MOVIES.reduce((s,m)=>s+m.rating,0)/MOVIES.length).toFixed(2);
   document.getElementById('n-rating').textContent = avg;
+  renderRecentMovies();
   return MOVIES;
 }
 
@@ -905,6 +1159,8 @@ function render(movies, genres, langs) {
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 
 // ── Init ──────────────────────────────────────────────────────────────────────
+populateAddMovieLanguages();
+document.getElementById('btn-add-movie').addEventListener('click', addMovie);
 buildChips();
 loadMovies();
 document.addEventListener('keydown',e=>{
