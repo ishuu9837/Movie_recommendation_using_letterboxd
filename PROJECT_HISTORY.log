@@ -1,0 +1,112 @@
+MRS BY LETTERBOXD — PROJECT HISTORY
+Updated: 11 October 2026, Asia/Kolkata
+Scope: known supplied baseline through version 5. This is a human-readable project audit, not a dump of credentials, personal profiles or raw tool output.
+
+EARLIEST AVAILABLE BASELINE — supplied version 2
+The user supplied mrs-letterboxd-v2-source.zip and identified the original Vercel URL as https://movie-recommendation-using-letterbo.vercel.app.
+The required website name was MRS by Letterboxd. The supplied legacy Python recommendation example used a small curated catalogue, genre attributes, NumPy/scikit-learn and cosine similarity.
+No version 1 source or complete pre-conversation development history was supplied, so this log does not invent it.
+The working checkout for this project is /Users/ishuu/Downloads/mrs-upgrade/mrs-letterboxd-v2.
+
+VERSION 3 — first substantial upgrade
+Replaced the primary experience with a responsive browser-local cinema app. Included 44 curated films, local posters, search/filter/sort controls, moods, favourites, watchlist, watched status, personal-film additions, CSV import and export, taste views and explainable recommendations.
+Recommendation model combined genre, language and era attributes with a catalogue-rating component. Affinity was labelled similarity, not predicted enjoyment.
+Application dependencies, API keys and databases were avoided. Static build output became the deployable source. Historical Python code was retained under legacy/ and excluded from the public build.
+Eight model tests and 26 browser assertions were recorded for this version.
+The private Sites project was established at https://mrs-by-letterboxd-cinema.just-hill-8226.chatgpt.site. The original Vercel project was not replaced.
+Source checkpoint: fc08918198aafcc372cad83af3e00766146b95ed.
+
+VERSION 4 — visual redesign, catalogue and privacy
+The user supplied a Framer reference and a pasted visual brief, requested all movies in the first source file, a pre-entry page, 2020–2026 highest-rated Discover, recent titles and privacy/cookie/terms pages.
+The visual direction adopted charcoal panels, orange actions, warm ivory, Fraunces display type, DM Sans controls, the supplied hero portraits/logo, language cards, mood pills, real film posters and the orange watchlist callout.
+The first file contained 8,194 movie/title rows. All were included; 29 earlier picks absent from the file and nine checked recent additions brought the catalogue to 8,232.
+Discover used 2020–2026 Film entries rated at least 4.0, in descending rating order. Known TV series were retained in All films and excluded from Discover.
+The contact email supplied by the user was founder@ishuu.me. Legal pages were written to describe actual browser-local behaviour, optional storage and external technical requests.
+Optional persistence was disabled until allowed. Essential privacy choice and tab entry state were distinguished from favourites, watchlist, watched history and personal additions.
+Stable IDs replaced title-only state to keep remakes separate. Legacy profile migration, robust CSV matching and source provenance were added.
+Local fonts, OFL licenses and real Tabler icons with their license were bundled. Initial/recent poster assets were bundled; the rest loaded lazily with fallbacks.
+Visual QA found and fixed a four-line desktop hero wrap and a desktop-visible mobile-menu button. Source mobile layout defects were adapted to a usable responsive layout. Post-fix comparisons passed.
+Twelve model/data tests and browser checks covered full-source import, data coverage, entry, storage, film controls, legal pages and responsive widths.
+Source checkpoint: 429976ec0a7ee290365d169754b7a728a2540dd5.
+Publication: existing owner-private Sites project, same URL. An updated source ZIP was produced for that earlier handoff.
+
+INTERMEDIATE VERSION 4.1 — merge prepared, then superseded
+A second supplied source contained 8,853 rows. A merge with the previous library represented 1,392 existing rows and one duplicate, added 7,460 unique films, and prepared a 15,692-title catalogue.
+Matching films kept their IDs, while supplied links and per-row provenance were preserved. Original ratings remained for existing films at this intermediate step.
+Browser checks exercised added-title search, saving, reload, full 8,853-row import, mobile controls and Discover restrictions.
+Before that merge was published, the user explicitly requested removal of previous movie data. The merge was replaced by an exclusive-source implementation; version 4.1 was not published as the final requested result.
+
+VERSION 4.2 — source replacement
+Used the second supplied source exclusively: 8,853 rows represented by 8,852 unique titles, with a repeated Sri Manjunatha entry merged.
+Previous source data and earlier curated additions absent from the replacement were removed from catalogue generation.
+Supplied ratings and metadata became authoritative for the replacement catalogue. Matching saved IDs remained stable. Unrelated saved IDs could not add films back into the library.
+The recent shelf used releases in the replacement source rather than separate older additions. Public source/count copy was updated.
+Fourteen model/data tests and browser checks passed, including no titles outside the replacement source, full import matching, ID stability, save/reload, search and mobile use.
+Source checkpoint: 19c1f50d73bf7ae5ce454fa05ef9b5df032a5ecd.
+Publication confirmed successful at the same private Sites URL. A version 4.2 source ZIP was created at that time.
+
+VERSION 5 — current requested experience
+The user supplied another catalogue and screenshots identifying the controls to remove. The latest supplied catalogue contains 8,493 unique film URLs/titles across English, Telugu, Tamil, Hindi and Malayalam.
+The latest source exclusively replaces the previous catalogue. Its public filename is intentionally not mentioned anywhere in the website. All supplied titles, years, ratings, language metadata, film URLs, poster URLs and source fields are retained. Known directors/stable IDs are preserved only for matching films.
+Removed the pictured secondary toolbar: Your taste, Choose favourites, Import Letterboxd CSV, Add a film and toolbar How it works. Related import/custom-film UI and runtime paths were removed. The model's CSV parser remains available to build/test data coverage but is not a visitor import feature.
+Changed the hero action to Surprise me. Surprise picks respect filters and watched status and use browser crypto for selection.
+Replaced entrance decoration with real RRR and Dune: Part Two cards, including titles/year/language captions.
+Replaced the dotted raster wordmark with semantic MRS text and the existing brand icon. Full site name remains MRS by Letterboxd.
+Added the top segmented Dark/Light control, device appearance in Preferences and reduced-motion settings. The light theme uses neutral backgrounds and darker accent text for readability. Theme-change captures must wait for the transition before assessing colours.
+Added an explicit sign-in demo after Enter, and a Sign in/Demo navigation control. Google, Apple, email and guest options all enter the same local demo without credential collection, OAuth or a real account. The card explains under-development status and that it is not real authentication.
+Built a new Preferences dialog with language and genre selections, excluded genres, default mood, runtime limit, minimum rating, hide-watched, appearance and reduced motion. Choices shape For you. Discover retains its fixed ranking rule.
+Added conflict validation when a genre is both preferred and excluded, local save/visit-only states, reset, JSON export and a confirmed clear-data action.
+Updated privacy settings with an always-on essential explanation and one optional persistence switch. Enter/demo choice does not grant optional consent. Revocation removes current and legacy MRS personal keys. Cross-tab revocation is handled.
+Rewrote How it works as a three-step section and added a footer link. Added the exact requested contact card text with a Gmail draft URL addressed to founder@ishuu.me. Clicking does not send an email.
+Updated privacy, cookie and terms pages to describe the current demo, storage keys, preferences, external posters and Gmail navigation. Contact remains founder@ishuu.me.
+
+VERSION 5 — security work and boundaries
+There is no SQL database, SQL driver or application query endpoint. Search strings are literal text, not evaluated SQL or code. Demo session markers grant no server permissions.
+Added shared text escaping, exact-host HTTPS film/poster URL checks, path-traversal rejection, whitelist-based stored-ID/preferences handling and catalogue build validation.
+Removed inline error handlers and use delegated JavaScript listeners. Configured a CSP excluding inline/eval scripts and disabling object embedding, base changes and form submission.
+Configured no-referrer, nosniff, restricted browser permissions and HSTS headers, with one header definition for preview, Cloudflare static headers and Vercel configuration. Meta CSP also protects application pages.
+External navigation uses noopener/noreferrer. Watchlist CSV exports protect formula prefixes. Browser storage errors fall back to visit-only operation.
+No absolute-security claim is made. Demo sign-in is not authentication; browser-local preferences are not sensitive account data. A future real-account/backend implementation needs a new security review.
+
+VERSION 5 — validation and corrections
+Sixteen model/data/security checks cover complete source coverage, no extra films, unique IDs/URLs, ranking, preferences, storage validation, hostile text, literal SQL-style searches, URL restrictions, CSP directives and removal of source filenames/old controls.
+Browser verification covers entry, all demo providers, preferences and consent, saving/reload, conflict handling, exports, clear data, Surprise me, details, search, Gmail target, legal settings and responsive layouts. Additional checks attempt poisoned storage and a blocked inline script.
+A unit assertion originally confused JavaScript .onclick property assignments with inline HTML event attributes; the test was corrected to inspect actual inline attributes.
+Immediate light-theme screenshots showed intermediate transition colours; settled computed colours confirmed readable white panels/dark type, and final evidence uses a transition wait.
+Final browser suite passed at 360, 390, 768, 1024 and 1440 CSS pixels, with no horizontal overflow or normal-flow JavaScript/CSP errors. Poisoned storage and inline-script probes passed. Cross-tab consent removal and completely blocked browser storage also passed.
+The local preview connection queue was increased to 128 after observing net::ERR_CONNECTION_RESET on simultaneous module requests; this resolved intermittent browser setup timeouts.
+Visual review corrected an inherited bottom offset that pulled entrance cards over the entry button. Opening modals now closes mobile navigation. Removed unused legacy title migration and dotted raster-logo assets from current source.
+Source documentation comprises design.md, readme.md, SECURITY.md, VERIFICATION.md and this chronological log. Security review states limits rather than claiming certification.
+The exact release source is identified by the final Git commit and native Sites version; the log does not embed its own future commit SHA, avoiding a self-referential change.
+
+VERSION 5 — publication and live verification
+First version 5 source commit: 0d35889c38c5ad063b5c3bd5df5b1d394e8a58e3. Published successfully to the existing private Sites URL on 11 October 2026.
+Native saved version: appgprj_6aca8c4d63688191970e7466ab2e0d44~appgver_417564710a8881918abd277f6cbab61d.
+Authenticated live Chrome verified 8,493 titles, Surprise me, removed toolbar, demo entry, cinema preferences and all legal routes. There were no uncaught JavaScript errors.
+Live header inspection found that the Sites static host does not deliver the configured CSP, nosniff, referrer, permissions or HSTS response headers. The meta CSP remains active and blocked a host-injected inline script without breaking the app. Meta no-referrer remains present. The security review, verification and README were updated to disclose this hosting limitation. No unsafe-inline exception was added.
+The response-header configurations remain for compatible Cloudflare/Vercel hosting. The original Vercel URL was not changed; no absolute-security or delivered-header guarantee is made. Final source documentation is published with the same tested runtime files.
+
+FINAL HANDOFF RULES
+Preserve the existing private Sites audience and update the same project. The original public Vercel URL is independent and has not been replaced by these Sites updates.
+User requested a ZIP only after approval of the final files. No new version 5 source ZIP is created before that approval. A deployment tar archive is a hosting artifact, not the requested downloadable source ZIP.
+Credentials, platform bypass tokens, personal browser profiles and raw private runtime details are intentionally excluded from all project documents and source artifacts.
+
+VERSION 5.1 — reference sign-in and approved ZIP
+The user supplied a sign-in reference on 11 October 2026 and then explicitly requested a ZIP. This authorizes the source ZIP that was previously held pending approval. The existing sign-in objective remains included in the ZIP.
+Replaced the compact demo modal with a full-screen dark-teal scene, left form and right 3D character. Generated an original matching illustration; stored it as assets/signin-background.png. Kept semantic HTML controls, MRS branding and visible demo status.
+Email/password fields are read-only examples. Password visibility toggles locally. Sign in enters the email demo; Google/Apple/guest choices and the registration action enter the demo without collecting credentials. Recovery explains that real sign-in is under development. There is no provider connection, credential transmission, authentication API or account registration.
+Added responsive layouts, constrained dialog overflow and retained the existing entry/close/session/privacy behaviours. The full cinema catalogue and recommendations remain unchanged.
+Updated design, README, QA, verification and history documents for the final source handoff. The source ZIP excludes .git, credentials, environment files and local tooling caches; it includes current source, data, assets, static build and project documents.
+Version 5.1 browser verification passed for all four demo providers, password visibility, recovery and registration at 2030/1265/768/390/360 CSS pixels; no page/console errors or horizontal overflow. Design QA found a large-screen vertical-placement difference, corrected it by 70 px, and passed after a fresh combined comparison. Evidence is bundled in docs/evidence. Current source and the rebuilt static output are included in the approved ZIP, with release metadata and integrity checked after packaging.
+
+FINAL DEPLOYMENT REVIEW — 12 October 2026
+User requested inspection of the website files, final deployment ZIP, design.md, project log and a report. Reviewed the HTML pages, runtime modules, model, storage, catalogue generation, build, hosting configuration, styles and assets. No functional application defect required a source-code change.
+Reran all 16 catalogue/model/security tests and browser flow checks. Complete cinema/privacy flow, sign-in at five widths and cross-tab/blocked-storage cases passed. Expanded checks passed for every language/mood action, filters/sorts/reset/pagination, recent films, keyboard search/focus trap, similar films, watchlist CSV contents, preference reset/device appearance, cancelled clearing, About and policy/back navigation. No normal-flow page/console errors. Fourteen states are inventoried in docs/evidence/element-inventory.json.
+Adjusted older test selectors to distinguish guest entry from the new registration button. Final tests wait for native asynchronous dialog-close state. These were test corrections, not application behaviour changes.
+Added scripts/check-release.mjs: 52 local references, 10 module syntax checks, 135 deployment files, all current local poster paths, unique HTML IDs, safe links, no inline handlers/source filenames, file-size limits, source/build byte equality and matching header configurations passed. All 107 raster assets decode; SVG assets parse.
+Created FINAL_REPORT.md and DEPLOYMENT.md; refreshed design.md, readme.md and VERIFICATION.md. The report retains security/demo/metadata/external-image/browser-storage limitations and distinguishes configured Vercel headers from the current Sites host's delivery limitation. Original Vercel publication is unchanged by the package review.
+Rebuilt the final static output. Final source ZIP includes the current catalogue, runtime, assets/licenses, tests/scripts, dist, design/README/history/security/verification/report/deployment documents and evidence. Git credentials/history, environment files and tooling caches are excluded. Per-file and whole-archive integrity are validated. The source commit is recorded in generated release metadata rather than embedded here self-referentially.
+
+GITHUB REPOSITORY UPDATE — 12 October 2026
+User requested updating ishuu9837/Movie_recommendation_using_letterboxd with the final verified project. The target repository's main branch initially contained the older site at both the root and mrs-letterboxd-v2/. Replaced active root files with the verified version 5.1 source and added current assets, catalogue, tests/scripts, design, history, security/verification/report/deployment documents and evidence. Removed the obsolete root API, root Python dependency file and duplicate nested site; previous versions remain recoverable in Git history. Rewrote CODE_EXPLANATION.md for the current architecture.
+The private Sites hosting identity is omitted from the GitHub export because Vercel needs only vercel.json and the static source. No credentials, environment files or generated build/cache directories are committed. The repository is public; current app files and intended project documentation are published at the user's request.

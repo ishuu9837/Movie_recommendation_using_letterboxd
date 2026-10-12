@@ -1,0 +1,11 @@
+{
+  "name": "mrs-by-letterboxd",
+  "version": "5.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/model.test.mjs",
+    "dev": "python3 scripts/preview.py"
+  }
+}

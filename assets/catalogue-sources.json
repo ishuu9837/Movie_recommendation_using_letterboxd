@@ -1,0 +1,15 @@
+{
+  "catalogue": {
+    "titles": 8493,
+    "languages": [
+      "English",
+      "Telugu",
+      "Hindi",
+      "Tamil",
+      "Malayalam"
+    ],
+    "ratings": "Supplied snapshots, dates available in film details"
+  },
+  "images": "Film posters from the supplied Letterboxd links; local entrance images identify RRR and Dune: Part Two.",
+  "identity": "Existing stable IDs retained for matching films."
+}

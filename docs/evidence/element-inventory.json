@@ -1,0 +1,7042 @@
+{
+  "date": "2026-10-12",
+  "scope": "Visible interactive elements in representative states; buttons for repeated film cards share the same behaviour.",
+  "states": {
+    "entrance": [
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Skip to content",
+        "type": null,
+        "href": "#main",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "./",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dark mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Light mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "enter-site",
+        "name": "Enter the cinema",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookies",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Terms",
+        "type": null,
+        "href": "terms.html",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      }
+    ],
+    "signin": [
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Skip to content",
+        "type": null,
+        "href": "#main",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Discover",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Moods",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Languages",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "All films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "For you",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "preferences-button",
+        "name": "Preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "signin-button",
+        "name": "Sign in Demo",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Watchlist · 0",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dark mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Light mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "surprise",
+        "name": "Surprise me",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Browse by mood",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "ENGLISHEnglish6,616 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TELUGUతెలుగు649 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "HINDIहिन्दी300 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TAMILதமிழ்647 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "MALAYALAMമലയാളം281 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cozy & warm",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Edge of my seat",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Ugly crying",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Laugh out loud",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Mind-bending",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Late-night slow burn",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Big masala energy",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Falling in love",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "personalize",
+        "name": "Tune my preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": "search",
+        "name": "Search films, directors, or genres",
+        "type": "search",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "language",
+        "name": "Filter by language",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "genre",
+        "name": "Filter by genre",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "era",
+        "name": "Filter by decade",
+        "type": null,
+        "href": null,
+        "disabled": true
+      },
+      {
+        "tag": "button",
+        "id": "filter-toggle",
+        "name": "More filters",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "sort",
+        "name": "RecommendedHighest ratedNewest firstTitle A–ZShortest first",
+        "type": null,
+        "href": null,
+        "disabled": true
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View National Theatre Live: Prima Facie details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love National Theatre Live: Prima Facie (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: National Theatre Live: Prima Facie (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "National Theatre Live: Prima Facie",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Renaissance: A Film by Beyoncé details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Renaissance: A Film by Beyoncé (2023)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Renaissance: A Film by Beyoncé (2023)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Renaissance: A Film by Beyoncé",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Absolutely details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Absolutely (2021)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Absolutely (2021)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Absolutely",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Folklore: The Long Pond Studio Sessions details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Folklore: The Long Pond Studio Sessions (2020)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Folklore: The Long Pond Studio Sessions (2020)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Folklore: The Long Pond Studio Sessions",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View The 1975 'At Their Very Best' Live from Madison Square Garden details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love The 1975 'At Their Very Best' Live from Madison Square Garden (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: The 1975 'At Their Very Best' Live from Madison Square Garden (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "The 1975 'At Their Very Best' Live from Madison Square Garden",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Madonna: The Celebration Tour in Rio details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Madonna: The Celebration Tour in Rio (2024)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Madonna: The Celebration Tour in Rio (2024)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Madonna: The Celebration Tour in Rio",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Spider-Man: Across the Spider-Verse details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Spider-Man: Across the Spider-Verse (2023)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Spider-Man: Across the Spider-Verse (2023)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Spider-Man: Across the Spider-Verse",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View The Beatles: Get Back - The Rooftop Concert details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love The Beatles: Get Back - The Rooftop Concert (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: The Beatles: Get Back - The Rooftop Concert (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "The Beatles: Get Back - The Rooftop Concert",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "load-more",
+        "name": "Explore more films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "browse-all",
+        "name": "Browse the entire catalogue",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Open my watchlist",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MAKE THE NEXT CHAPTER BETTERGot a idea ? lets connect !!!founder@ishuu.me",
+        "type": null,
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=founder%40ishuu.me",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy policy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookie policy",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Terms & conditions",
+        "type": null,
+        "href": "terms.html",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "How it works",
+        "type": null,
+        "href": "#how-it-works",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "credits",
+        "name": "About MRS",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Close dialog",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Back to cinema",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": "demo-email",
+        "name": "Example email — demo only",
+        "type": "text",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": "demo-password",
+        "name": "Example password — demo only",
+        "type": "password",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "demo-password-toggle",
+        "name": "Show example password",
+        "type": "button",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "demo-forgot",
+        "name": "Forgot Password?",
+        "type": "button",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Sign in",
+        "type": "submit",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Continue with Google demo",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Continue with Apple demo",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Continue as guest",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Register for free",
+        "type": null,
+        "href": null,
+        "disabled": false
+      }
+    ],
+    "discover": [
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Skip to content",
+        "type": null,
+        "href": "#main",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Discover",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Moods",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Languages",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "All films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "For you",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "preferences-button",
+        "name": "Preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "signin-button",
+        "name": "Cinema guest Demo",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Watchlist · 0",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dark mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Light mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "surprise",
+        "name": "Surprise me",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Browse by mood",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "ENGLISHEnglish6,616 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TELUGUతెలుగు649 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "HINDIहिन्दी300 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TAMILதமிழ்647 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "MALAYALAMമലയാളം281 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cozy & warm",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Edge of my seat",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Ugly crying",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Laugh out loud",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Mind-bending",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Late-night slow burn",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Big masala energy",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Falling in love",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "personalize",
+        "name": "Tune my preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": "search",
+        "name": "Search films, directors, or genres",
+        "type": "search",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "language",
+        "name": "Filter by language",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "genre",
+        "name": "Filter by genre",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "era",
+        "name": "Filter by decade",
+        "type": null,
+        "href": null,
+        "disabled": true
+      },
+      {
+        "tag": "button",
+        "id": "filter-toggle",
+        "name": "More filters",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "sort",
+        "name": "RecommendedHighest ratedNewest firstTitle A–ZShortest first",
+        "type": null,
+        "href": null,
+        "disabled": true
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View National Theatre Live: Prima Facie details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love National Theatre Live: Prima Facie (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: National Theatre Live: Prima Facie (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "National Theatre Live: Prima Facie",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Renaissance: A Film by Beyoncé details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Renaissance: A Film by Beyoncé (2023)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Renaissance: A Film by Beyoncé (2023)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Renaissance: A Film by Beyoncé",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Absolutely details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Absolutely (2021)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Absolutely (2021)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Absolutely",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Folklore: The Long Pond Studio Sessions details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Folklore: The Long Pond Studio Sessions (2020)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Folklore: The Long Pond Studio Sessions (2020)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Folklore: The Long Pond Studio Sessions",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View The 1975 'At Their Very Best' Live from Madison Square Garden details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love The 1975 'At Their Very Best' Live from Madison Square Garden (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: The 1975 'At Their Very Best' Live from Madison Square Garden (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "The 1975 'At Their Very Best' Live from Madison Square Garden",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Madonna: The Celebration Tour in Rio details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Madonna: The Celebration Tour in Rio (2024)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Madonna: The Celebration Tour in Rio (2024)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Madonna: The Celebration Tour in Rio",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Spider-Man: Across the Spider-Verse details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Spider-Man: Across the Spider-Verse (2023)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Spider-Man: Across the Spider-Verse (2023)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Spider-Man: Across the Spider-Verse",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View The Beatles: Get Back - The Rooftop Concert details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love The Beatles: Get Back - The Rooftop Concert (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: The Beatles: Get Back - The Rooftop Concert (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "The Beatles: Get Back - The Rooftop Concert",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "load-more",
+        "name": "Explore more films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "browse-all",
+        "name": "Browse the entire catalogue",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Open my watchlist",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MAKE THE NEXT CHAPTER BETTERGot a idea ? lets connect !!!founder@ishuu.me",
+        "type": null,
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=founder%40ishuu.me",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy policy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookie policy",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Terms & conditions",
+        "type": null,
+        "href": "terms.html",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "How it works",
+        "type": null,
+        "href": "#how-it-works",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "credits",
+        "name": "About MRS",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      }
+    ],
+    "allfilms": [
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Skip to content",
+        "type": null,
+        "href": "#main",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Discover",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Moods",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Languages",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "All films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "For you",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "preferences-button",
+        "name": "Preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "signin-button",
+        "name": "Cinema guest Demo",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Watchlist · 0",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dark mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Light mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "ENGLISHEnglish6,616 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TELUGUతెలుగు649 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "HINDIहिन्दी300 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TAMILதமிழ்647 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "MALAYALAMമലയാളം281 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cozy & warm",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Edge of my seat",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Ugly crying",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Laugh out loud",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Mind-bending",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Late-night slow burn",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Big masala energy",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Falling in love",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "personalize",
+        "name": "Tune my preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": "search",
+        "name": "Search films, directors, or genres",
+        "type": "search",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "language",
+        "name": "Filter by language",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "genre",
+        "name": "Filter by genre",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "era",
+        "name": "Filter by decade",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "filter-toggle",
+        "name": "More filters",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "sort",
+        "name": "RecommendedHighest ratedNewest firstTitle A–ZShortest first",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Radiohead: In Rainbows – From the Basement details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Radiohead: In Rainbows – From the Basement (2008)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Radiohead: In Rainbows – From the Basement (2008)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Radiohead: In Rainbows – From the Basement",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Band of Brothers details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Band of Brothers (2001)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Band of Brothers (2001)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Band of Brothers",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View No Half Measures: Creating the Final Season of Breaking Bad details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love No Half Measures: Creating the Final Season of Breaking Bad (2013)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: No Half Measures: Creating the Final Season of Breaking Bad (2013)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "No Half Measures: Creating the Final Season of Breaking Bad",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Stop Making Sense details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Stop Making Sense (1984)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Stop Making Sense (1984)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Stop Making Sense",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Twin Peaks details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Twin Peaks (1989)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Twin Peaks (1989)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Twin Peaks",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Planet Earth II details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Planet Earth II (2016)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Planet Earth II (2016)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Planet Earth II",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View 12 Angry Men details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love 12 Angry Men (1957)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: 12 Angry Men (1957)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "12 Angry Men",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Over the Garden Wall details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Over the Garden Wall (2014)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Over the Garden Wall (2014)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Over the Garden Wall",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "load-more",
+        "name": "Explore more films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View The Odyssey details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love The Odyssey (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: The Odyssey (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "The Odyssey",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Project Hail Mary details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Project Hail Mary (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Project Hail Mary (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Project Hail Mary",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Dorothy details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Dorothy (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Dorothy (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dorothy",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Baththa details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Baththa (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Baththa (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Baththa",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Spider-Man: Brand New Day details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Spider-Man: Brand New Day (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Spider-Man: Brand New Day (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Spider-Man: Brand New Day",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View The Invite details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love The Invite (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: The Invite (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "The Invite",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Batman: Knightfall Part 1: Knightfall details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Batman: Knightfall Part 1: Knightfall (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Batman: Knightfall Part 1: Knightfall (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Batman: Knightfall Part 1: Knightfall",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Bethlehem Kudumba Unit details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Bethlehem Kudumba Unit (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Bethlehem Kudumba Unit (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Bethlehem Kudumba Unit",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Open my watchlist",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MAKE THE NEXT CHAPTER BETTERGot a idea ? lets connect !!!founder@ishuu.me",
+        "type": null,
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=founder%40ishuu.me",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy policy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookie policy",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Terms & conditions",
+        "type": null,
+        "href": "terms.html",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "How it works",
+        "type": null,
+        "href": "#how-it-works",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "credits",
+        "name": "About MRS",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      }
+    ],
+    "extraFilters": [
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Skip to content",
+        "type": null,
+        "href": "#main",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Discover",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Moods",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Languages",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "All films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "For you",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "preferences-button",
+        "name": "Preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "signin-button",
+        "name": "Cinema guest Demo",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Watchlist · 0",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dark mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Light mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "ENGLISHEnglish6,616 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TELUGUతెలుగు649 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "HINDIहिन्दी300 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TAMILதமிழ்647 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "MALAYALAMമലയാളം281 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cozy & warm",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Edge of my seat",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Ugly crying",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Laugh out loud",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Mind-bending",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Late-night slow burn",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Big masala energy",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Falling in love",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "personalize",
+        "name": "Tune my preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": "search",
+        "name": "Search films, directors, or genres",
+        "type": "search",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "language",
+        "name": "Filter by language",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "genre",
+        "name": "Filter by genre",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "era",
+        "name": "Filter by decade",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "filter-toggle",
+        "name": "More filters",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "runtime",
+        "name": "Any lengthUnder 100 minutesUnder 130 minutesUnder 160 minutes",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "rating",
+        "name": "Any rating4.0+4.2+",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "format",
+        "name": "All titlesFilmsSeries",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": "hide-watched",
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "sort",
+        "name": "RecommendedHighest ratedNewest firstTitle A–ZShortest first",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Radiohead: In Rainbows – From the Basement details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Radiohead: In Rainbows – From the Basement (2008)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Radiohead: In Rainbows – From the Basement (2008)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Radiohead: In Rainbows – From the Basement",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Band of Brothers details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Band of Brothers (2001)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Band of Brothers (2001)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Band of Brothers",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View No Half Measures: Creating the Final Season of Breaking Bad details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love No Half Measures: Creating the Final Season of Breaking Bad (2013)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: No Half Measures: Creating the Final Season of Breaking Bad (2013)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "No Half Measures: Creating the Final Season of Breaking Bad",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Stop Making Sense details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Stop Making Sense (1984)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Stop Making Sense (1984)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Stop Making Sense",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Twin Peaks details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Twin Peaks (1989)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Twin Peaks (1989)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Twin Peaks",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Planet Earth II details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Planet Earth II (2016)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Planet Earth II (2016)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Planet Earth II",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View 12 Angry Men details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love 12 Angry Men (1957)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: 12 Angry Men (1957)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "12 Angry Men",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Over the Garden Wall details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Over the Garden Wall (2014)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Over the Garden Wall (2014)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Over the Garden Wall",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "load-more",
+        "name": "Explore more films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View The Odyssey details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love The Odyssey (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: The Odyssey (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "The Odyssey",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Project Hail Mary details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Project Hail Mary (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Project Hail Mary (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Project Hail Mary",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Dorothy details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Dorothy (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Dorothy (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dorothy",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Baththa details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Baththa (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Baththa (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Baththa",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Spider-Man: Brand New Day details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Spider-Man: Brand New Day (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Spider-Man: Brand New Day (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Spider-Man: Brand New Day",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View The Invite details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love The Invite (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: The Invite (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "The Invite",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Batman: Knightfall Part 1: Knightfall details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Batman: Knightfall Part 1: Knightfall (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Batman: Knightfall Part 1: Knightfall (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Batman: Knightfall Part 1: Knightfall",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Bethlehem Kudumba Unit details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Bethlehem Kudumba Unit (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Bethlehem Kudumba Unit (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Bethlehem Kudumba Unit",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Open my watchlist",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MAKE THE NEXT CHAPTER BETTERGot a idea ? lets connect !!!founder@ishuu.me",
+        "type": null,
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=founder%40ishuu.me",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy policy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookie policy",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Terms & conditions",
+        "type": null,
+        "href": "terms.html",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "How it works",
+        "type": null,
+        "href": "#how-it-works",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "credits",
+        "name": "About MRS",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      }
+    ],
+    "filmDetails": [
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Skip to content",
+        "type": null,
+        "href": "#main",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Discover",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Moods",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Languages",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "All films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "For you",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "preferences-button",
+        "name": "Preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "signin-button",
+        "name": "Cinema guest Demo",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Watchlist · 1",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dark mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Light mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "ENGLISHEnglish6,616 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TELUGUతెలుగు649 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "HINDIहिन्दी300 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TAMILதமிழ்647 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "MALAYALAMമലയാളം281 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cozy & warm",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Edge of my seat",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Ugly crying",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Laugh out loud",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Mind-bending",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Late-night slow burn",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Big masala energy",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Falling in love",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "personalize",
+        "name": "Tune my preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": "search",
+        "name": "Search films, directors, or genres",
+        "type": "search",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "language",
+        "name": "Filter by language",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "genre",
+        "name": "Filter by genre",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "era",
+        "name": "Filter by decade",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "filter-toggle",
+        "name": "More filters",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Clear filters",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "sort",
+        "name": "RecommendedHighest ratedNewest firstTitle A–ZShortest first",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View RRR details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love RRR (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Remove from watchlist: RRR (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "RRR",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View The Odyssey details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love The Odyssey (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: The Odyssey (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "The Odyssey",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Project Hail Mary details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Project Hail Mary (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Project Hail Mary (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Project Hail Mary",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Dorothy details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Dorothy (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Dorothy (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dorothy",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Baththa details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Baththa (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Baththa (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Baththa",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Spider-Man: Brand New Day details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Spider-Man: Brand New Day (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Spider-Man: Brand New Day (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Spider-Man: Brand New Day",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View The Invite details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love The Invite (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: The Invite (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "The Invite",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Batman: Knightfall Part 1: Knightfall details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Batman: Knightfall Part 1: Knightfall (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Batman: Knightfall Part 1: Knightfall (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Batman: Knightfall Part 1: Knightfall",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Bethlehem Kudumba Unit details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Bethlehem Kudumba Unit (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Bethlehem Kudumba Unit (2026)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Bethlehem Kudumba Unit",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Open my watchlist",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MAKE THE NEXT CHAPTER BETTERGot a idea ? lets connect !!!founder@ishuu.me",
+        "type": null,
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=founder%40ishuu.me",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy policy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookie policy",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Terms & conditions",
+        "type": null,
+        "href": "terms.html",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "How it works",
+        "type": null,
+        "href": "#how-it-works",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "credits",
+        "name": "About MRS",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Close film details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love this film",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Saved",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Mark watched",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Explore on Letterboxd",
+        "type": null,
+        "href": "https://letterboxd.com/film/rrr/",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Narappa details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Narappa (2021)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Narappa (2021)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Narappa",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Bhaje Vaayu Vegam details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Bhaje Vaayu Vegam (2024)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Bhaje Vaayu Vegam (2024)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Bhaje Vaayu Vegam",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Akhanda details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Akhanda (2021)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Akhanda (2021)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Akhanda",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Waltair Veerayya details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Waltair Veerayya (2023)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Waltair Veerayya (2023)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Waltair Veerayya",
+        "type": null,
+        "href": null,
+        "disabled": false
+      }
+    ],
+    "watchlist": [
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Skip to content",
+        "type": null,
+        "href": "#main",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Discover",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Moods",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Languages",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "All films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "For you",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "preferences-button",
+        "name": "Preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "signin-button",
+        "name": "Cinema guest Demo",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Watchlist · 1",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dark mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Light mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "personalize",
+        "name": "Export watchlist",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": "search",
+        "name": "Search films, directors, or genres",
+        "type": "search",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "language",
+        "name": "Filter by language",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "genre",
+        "name": "Filter by genre",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "era",
+        "name": "Filter by decade",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "filter-toggle",
+        "name": "More filters",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "sort",
+        "name": "RecommendedHighest ratedNewest firstTitle A–ZShortest first",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View RRR details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love RRR (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Remove from watchlist: RRR (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "RRR",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "browse-all",
+        "name": "Browse the entire catalogue",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MAKE THE NEXT CHAPTER BETTERGot a idea ? lets connect !!!founder@ishuu.me",
+        "type": null,
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=founder%40ishuu.me",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy policy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookie policy",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Terms & conditions",
+        "type": null,
+        "href": "terms.html",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "How it works",
+        "type": null,
+        "href": "#how-it-works",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "credits",
+        "name": "About MRS",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      }
+    ],
+    "cinemaPreferences": [
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Skip to content",
+        "type": null,
+        "href": "#main",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Discover",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Moods",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Languages",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "All films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "For you",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "preferences-button",
+        "name": "Preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "signin-button",
+        "name": "Cinema guest Demo",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Watchlist · 1",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dark mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Light mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "personalize",
+        "name": "Export watchlist",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": "search",
+        "name": "Search films, directors, or genres",
+        "type": "search",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "language",
+        "name": "Filter by language",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "genre",
+        "name": "Filter by genre",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "era",
+        "name": "Filter by decade",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "filter-toggle",
+        "name": "More filters",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "sort",
+        "name": "RecommendedHighest ratedNewest firstTitle A–ZShortest first",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View RRR details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love RRR (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Remove from watchlist: RRR (2022)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "RRR",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "browse-all",
+        "name": "Browse the entire catalogue",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MAKE THE NEXT CHAPTER BETTERGot a idea ? lets connect !!!founder@ishuu.me",
+        "type": null,
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=founder%40ishuu.me",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy policy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookie policy",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Terms & conditions",
+        "type": null,
+        "href": "terms.html",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "How it works",
+        "type": null,
+        "href": "#how-it-works",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "credits",
+        "name": "About MRS",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Close dialog",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Your cinema",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Privacy & storage",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": null,
+        "name": "Let me decideCozy & warmEdge of my seatUgly cryingLaugh out loudMind-bendingLate-night slo",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": null,
+        "name": "Any lengthUnder 100 minutesUnder 130 minutesUnder 160 minutes",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": null,
+        "name": "Any rating3.0+3.5+4.0+4.2+",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": null,
+        "name": "DarkLightMatch my device",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": null,
+        "name": "Remember on this device",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "reset-preferences",
+        "name": "Reset preferences",
+        "type": "button",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Save preferences",
+        "type": "submit",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "export-profile",
+        "name": "Export my choices",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "clear-profile",
+        "name": "Clear my film data",
+        "type": null,
+        "href": null,
+        "disabled": false
+      }
+    ],
+    "foryou": [
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Skip to content",
+        "type": null,
+        "href": "#main",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Discover",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Moods",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Languages",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "All films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "For you",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "preferences-button",
+        "name": "Preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "signin-button",
+        "name": "Cinema guest Demo",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Watchlist · 1",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dark mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Light mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "ENGLISHEnglish6,616 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TELUGUతెలుగు649 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "HINDIहिन्दी300 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TAMILதமிழ்647 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "MALAYALAMമലയാളം281 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cozy & warm",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Edge of my seat",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Ugly crying",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Laugh out loud",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Mind-bending",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Late-night slow burn",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Big masala energy",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Falling in love",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "personalize",
+        "name": "Tune my preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": "search",
+        "name": "Search films, directors, or genres",
+        "type": "search",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "language",
+        "name": "Filter by language",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "genre",
+        "name": "Filter by genre",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "era",
+        "name": "Filter by decade",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "filter-toggle",
+        "name": "More filters",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "sort",
+        "name": "RecommendedHighest ratedNewest firstTitle A–ZShortest first",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Radiohead: In Rainbows – From the Basement details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Radiohead: In Rainbows – From the Basement (2008)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Radiohead: In Rainbows – From the Basement (2008)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Radiohead: In Rainbows – From the Basement",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Band of Brothers details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Band of Brothers (2001)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Band of Brothers (2001)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Band of Brothers",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View No Half Measures: Creating the Final Season of Breaking Bad details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love No Half Measures: Creating the Final Season of Breaking Bad (2013)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: No Half Measures: Creating the Final Season of Breaking Bad (2013)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "No Half Measures: Creating the Final Season of Breaking Bad",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Stop Making Sense details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Stop Making Sense (1984)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Stop Making Sense (1984)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Stop Making Sense",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Twin Peaks details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Twin Peaks (1989)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Twin Peaks (1989)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Twin Peaks",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Planet Earth II details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Planet Earth II (2016)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Planet Earth II (2016)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Planet Earth II",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View 12 Angry Men details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love 12 Angry Men (1957)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: 12 Angry Men (1957)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "12 Angry Men",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Over the Garden Wall details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Over the Garden Wall (2014)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Over the Garden Wall (2014)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Over the Garden Wall",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "load-more",
+        "name": "Explore more films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "browse-all",
+        "name": "Browse the entire catalogue",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Open my watchlist",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MAKE THE NEXT CHAPTER BETTERGot a idea ? lets connect !!!founder@ishuu.me",
+        "type": null,
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=founder%40ishuu.me",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy policy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookie policy",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Terms & conditions",
+        "type": null,
+        "href": "terms.html",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "How it works",
+        "type": null,
+        "href": "#how-it-works",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "credits",
+        "name": "About MRS",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      }
+    ],
+    "privacySettings": [
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Skip to content",
+        "type": null,
+        "href": "#main",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Discover",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Moods",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Languages",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "All films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "For you",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "preferences-button",
+        "name": "Preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "signin-button",
+        "name": "Cinema guest Demo",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Watchlist · 1",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dark mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Light mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "ENGLISHEnglish6,616 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TELUGUతెలుగు649 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "HINDIहिन्दी300 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TAMILதமிழ்647 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "MALAYALAMമലയാളം281 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cozy & warm",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Edge of my seat",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Ugly crying",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Laugh out loud",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Mind-bending",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Late-night slow burn",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Big masala energy",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Falling in love",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "personalize",
+        "name": "Tune my preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": "search",
+        "name": "Search films, directors, or genres",
+        "type": "search",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "language",
+        "name": "Filter by language",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "genre",
+        "name": "Filter by genre",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "era",
+        "name": "Filter by decade",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "filter-toggle",
+        "name": "More filters",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "sort",
+        "name": "RecommendedHighest ratedNewest firstTitle A–ZShortest first",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Radiohead: In Rainbows – From the Basement details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Radiohead: In Rainbows – From the Basement (2008)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Radiohead: In Rainbows – From the Basement (2008)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Radiohead: In Rainbows – From the Basement",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Band of Brothers details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Band of Brothers (2001)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Band of Brothers (2001)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Band of Brothers",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View No Half Measures: Creating the Final Season of Breaking Bad details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love No Half Measures: Creating the Final Season of Breaking Bad (2013)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: No Half Measures: Creating the Final Season of Breaking Bad (2013)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "No Half Measures: Creating the Final Season of Breaking Bad",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Stop Making Sense details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Stop Making Sense (1984)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Stop Making Sense (1984)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Stop Making Sense",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Twin Peaks details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Twin Peaks (1989)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Twin Peaks (1989)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Twin Peaks",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Planet Earth II details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Planet Earth II (2016)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Planet Earth II (2016)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Planet Earth II",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View 12 Angry Men details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love 12 Angry Men (1957)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: 12 Angry Men (1957)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "12 Angry Men",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Over the Garden Wall details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Over the Garden Wall (2014)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Over the Garden Wall (2014)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Over the Garden Wall",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "load-more",
+        "name": "Explore more films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "browse-all",
+        "name": "Browse the entire catalogue",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Open my watchlist",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MAKE THE NEXT CHAPTER BETTERGot a idea ? lets connect !!!founder@ishuu.me",
+        "type": null,
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=founder%40ishuu.me",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy policy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookie policy",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Terms & conditions",
+        "type": null,
+        "href": "terms.html",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "How it works",
+        "type": null,
+        "href": "#how-it-works",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "credits",
+        "name": "About MRS",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Close dialog",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Your cinema",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Privacy & storage",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": "preferences-toggle",
+        "name": "Remember my preferences",
+        "type": "checkbox",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "settings-essential",
+        "name": "Essential only",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "save-cookie-settings",
+        "name": "Save privacy choices",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookie policy",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy policy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      }
+    ],
+    "about": [
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Skip to content",
+        "type": null,
+        "href": "#main",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Discover",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Moods",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Languages",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "All films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "For you",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "preferences-button",
+        "name": "Preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "signin-button",
+        "name": "Cinema guest Demo",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Watchlist · 1",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dark mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Light mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "ENGLISHEnglish6,616 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TELUGUతెలుగు649 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "HINDIहिन्दी300 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "TAMILதமிழ்647 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "MALAYALAMമലയാളം281 titles",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cozy & warm",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Edge of my seat",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Ugly crying",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Laugh out loud",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Mind-bending",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Late-night slow burn",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Big masala energy",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Falling in love",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "personalize",
+        "name": "Tune my preferences",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "id": "search",
+        "name": "Search films, directors, or genres",
+        "type": "search",
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "language",
+        "name": "Filter by language",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "genre",
+        "name": "Filter by genre",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "era",
+        "name": "Filter by decade",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "filter-toggle",
+        "name": "More filters",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "id": "sort",
+        "name": "RecommendedHighest ratedNewest firstTitle A–ZShortest first",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Radiohead: In Rainbows – From the Basement details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Radiohead: In Rainbows – From the Basement (2008)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Radiohead: In Rainbows – From the Basement (2008)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Radiohead: In Rainbows – From the Basement",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Band of Brothers details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Band of Brothers (2001)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Band of Brothers (2001)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Band of Brothers",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View No Half Measures: Creating the Final Season of Breaking Bad details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love No Half Measures: Creating the Final Season of Breaking Bad (2013)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: No Half Measures: Creating the Final Season of Breaking Bad (2013)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "No Half Measures: Creating the Final Season of Breaking Bad",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Stop Making Sense details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Stop Making Sense (1984)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Stop Making Sense (1984)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Stop Making Sense",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Twin Peaks details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Twin Peaks (1989)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Twin Peaks (1989)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Twin Peaks",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Planet Earth II details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Planet Earth II (2016)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Planet Earth II (2016)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Planet Earth II",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View 12 Angry Men details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love 12 Angry Men (1957)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: 12 Angry Men (1957)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "12 Angry Men",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "View Over the Garden Wall details",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Love Over the Garden Wall (2014)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Add to watchlist: Over the Garden Wall (2014)",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Over the Garden Wall",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "load-more",
+        "name": "Explore more films",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "browse-all",
+        "name": "Browse the entire catalogue",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Open my watchlist",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MAKE THE NEXT CHAPTER BETTERGot a idea ? lets connect !!!founder@ishuu.me",
+        "type": null,
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=founder%40ishuu.me",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy policy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookie policy",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Terms & conditions",
+        "type": null,
+        "href": "terms.html",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "How it works",
+        "type": null,
+        "href": "#how-it-works",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": "credits",
+        "name": "About MRS",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRSby Letterboxd",
+        "type": null,
+        "href": "#discover",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Close dialog",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy policy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookie policy",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Contact founder@ishuu.me",
+        "type": null,
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=founder%40ishuu.me",
+        "disabled": false
+      }
+    ],
+    "privacy.html": [
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRS by Letterboxd",
+        "type": null,
+        "href": "./",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dark mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Light mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Back to cinema",
+        "type": null,
+        "href": "./",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookies",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Terms",
+        "type": null,
+        "href": "terms.html",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "founder@ishuu.me",
+        "type": null,
+        "href": "mailto:founder@ishuu.me",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Clear stored film data",
+        "type": null,
+        "href": null,
+        "disabled": false
+      }
+    ],
+    "cookies.html": [
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRS by Letterboxd",
+        "type": null,
+        "href": "./",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dark mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Light mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Back to cinema",
+        "type": null,
+        "href": "./",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookies",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Terms",
+        "type": null,
+        "href": "terms.html",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Open cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "founder@ishuu.me",
+        "type": null,
+        "href": "mailto:founder@ishuu.me",
+        "disabled": false
+      }
+    ],
+    "terms.html": [
+      {
+        "tag": "a",
+        "id": null,
+        "name": "MRS by Letterboxd",
+        "type": null,
+        "href": "./",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Dark mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Light mode",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Back to cinema",
+        "type": null,
+        "href": "./",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Privacy",
+        "type": null,
+        "href": "privacy.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Cookies",
+        "type": null,
+        "href": "cookies.html",
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "Terms",
+        "type": null,
+        "href": "terms.html",
+        "disabled": false
+      },
+      {
+        "tag": "button",
+        "id": null,
+        "name": "Cookie settings",
+        "type": null,
+        "href": null,
+        "disabled": false
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "name": "founder@ishuu.me",
+        "type": null,
+        "href": "mailto:founder@ishuu.me",
+        "disabled": false
+      }
+    ]
+  }
+}
