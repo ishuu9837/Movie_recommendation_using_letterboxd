@@ -2,7 +2,7 @@
 
 Release review: 12 October 2026. Application version: 5.1.0.
 
-**Result: local application and deployment-artifact checks passed.** The configured Vercel deployment has not been executed in this review. The existing Sites publication remains private; publishing to a new public audience is a separate action.
+**Result: local application and deployment-artifact checks passed.** The initial package review did not deploy Vercel; the subsequent GitHub update on 12 October 2026 automatically deployed it successfully. The live URL serves the new UI and all configured security response headers. The existing Sites publication remains private; publishing to a new public audience is a separate action.
 
 ## Reviewed flow
 
@@ -44,4 +44,8 @@ Deploy the project source with the supplied vercel.json, or serve dist/ on compa
 
 ## Practical limits
 
-Absolute security is not guaranteed; this is a scoped source/browser/artifact review, not a penetration-test certification. Saved choices are browser-local and do not transfer across domains. Ratings and metadata are snapshots. Real sign-in, cross-device sync and backend account storage are not implemented. Current Sites response-header delivery is limited; Vercel delivery is configured but remains to be verified after that deployment. Image/illustration rights and platform access remain the operator's responsibility.
+Absolute security is not guaranteed; this is a scoped source/browser/artifact review, not a penetration-test certification. Saved choices are browser-local and do not transfer across domains. Ratings and metadata are snapshots. Real sign-in, cross-device sync and backend account storage are not implemented. Current Sites response-header delivery is limited; Vercel response-header delivery was verified after the GitHub-triggered deployment. Image/illustration rights and platform access remain the operator's responsibility.
+
+## GitHub and live deployment confirmation
+
+The final project was pushed to main in ishuu9837/Movie_recommendation_using_letterboxd. The initial upgrade commit is 84b058b10f6f33b229afea402ad1b5671fe1e3b0. GitHub reports the Vercel deployment status as success. An HTTPS request to https://movie-recommendation-using-letterbo.vercel.app returns 200 and the new 8,493-title catalogue, Surprise me action and contact card, with CSP, nosniff, no-referrer, permissions policy and HSTS response headers. The GitHub checkout also passed all 16 tests, the build and scripts/check-release.mjs before push. Runtime files match the verified release; the old root API/requirements and nested duplicate are removed.

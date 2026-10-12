@@ -41,3 +41,7 @@ Browser verification at 2030, 1265, 768, 390 and 360 CSS pixels passes for the f
 ## Final deployment review — 12 October 2026
 
 The final review reran the 16 unit/model/security tests, complete cinema/privacy browser flow, sign-in at five widths, cross-tab/blocked-storage checks and expanded control coverage. All pass. The expanded pass covers all language/mood actions, filters/sorts/reset/pagination, recent films, keyboard search and modal focus, similar films, CSV export contents, preference reset/device appearance, cancelled clear, About and policy/back links. Fourteen rendered states are inventoried in docs/evidence/element-inventory.json. A source/build audit checks 52 local references, 10 syntax modules, 135 static output files, header consistency and byte equality. All 107 bundled raster images decode and SVGs parse. No functional application changes were needed. Full evidence and limits are in FINAL_REPORT.md; packaging steps are in DEPLOYMENT.md.
+
+## GitHub/Vercel publication confirmation
+
+The GitHub checkout passed the same 16 tests, static build and release-file checks. Main-branch upgrade commit 84b058b10f6f33b229afea402ad1b5671fe1e3b0 triggered a successful Vercel deployment. HTTPS checks confirm the new site at https://movie-recommendation-using-letterbo.vercel.app and delivery of all configured security response headers. The previous missing-header limitation remains specific to the separate Sites static publication.

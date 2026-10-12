@@ -36,4 +36,4 @@ Test the entrance and demo, themes, Discover and All films, details/Surprise me,
 
 Sign-in remains a labelled demo with read-only example fields, not real authentication. Add real server-side authentication/authorization before introducing private accounts or sensitive data. The existing Sites project metadata is included only to preserve this project's identity; it contains no secret. The current Sites static host does not deliver the configured security response headers, so its successful publication does not certify header delivery on another host.
 
-The original Vercel URL has not been redeployed by this final package review. Follow FINAL_REPORT.md and SECURITY.md for evidence and limitations.
+The original Vercel URL was unchanged during the initial package review. The subsequent GitHub main-branch update triggered a successful Vercel deployment on 12 October 2026; the new live UI and configured response headers were verified at https://movie-recommendation-using-letterbo.vercel.app. Follow FINAL_REPORT.md and SECURITY.md for evidence and limitations.

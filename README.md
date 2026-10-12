@@ -61,3 +61,7 @@ Film posters may be supplied by an external host; failed images have visible fal
 - docs/evidence/element-inventory.json: interactive elements across 14 reviewed states.
 
 The current Sites project is updated independently of the original Vercel URL. The user requested the final source ZIP after reviewing version 5. It includes this sign-in update, runtime source, catalogue, assets, build output and project documents; Git credentials and local tooling caches are excluded.
+
+## Live deployment
+
+The final project is on main in [ishuu9837/Movie_recommendation_using_letterboxd](https://github.com/ishuu9837/Movie_recommendation_using_letterboxd). Its GitHub-triggered Vercel deployment succeeded on 12 October 2026. [Open MRS by Letterboxd](https://movie-recommendation-using-letterbo.vercel.app). The configured security response headers were verified on that live URL. The separate Sites static-host header limitation does not apply to this verified Vercel response.
