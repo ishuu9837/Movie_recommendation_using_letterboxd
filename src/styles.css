@@ -1,0 +1,16 @@
+:root{--bg:#101112;--panel:#191a1c;--fg:#f3efe6;--mut:#a09b90;--ac:#ff7900}[data-theme=light]{--bg:#f5f3ef;--panel:#fff;--fg:#191a1c;--mut:#6a665e}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif}
+header{display:flex;gap:1rem;align-items:center;padding:.75rem 1.25rem;position:sticky;top:0;background:var(--bg);z-index:5;border-bottom:1px solid #8884}
+header nav{flex:1;display:flex;gap:.25rem;flex-wrap:wrap}header small{color:var(--mut);font-weight:400}
+button,select,input[type=search]{font:inherit;color:inherit;background:var(--panel);border:1px solid #8886;border-radius:999px;padding:.4rem .9rem;cursor:pointer}
+button[aria-current=true],button[aria-pressed=true]{background:var(--ac);color:#111;border-color:var(--ac)}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+main{max-width:1200px;margin:0 auto;padding:1rem}.bar,.moods{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem}.bar input{flex:1;min-width:200px}
+.count{color:var(--mut)}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1rem}.grid.small{grid-template-columns:repeat(4,1fr)}
+.film{position:relative;content-visibility:auto;contain-intrinsic-size:300px}.film h3{margin:.4rem 0 0;font-size:.95rem}.film p{margin:0;color:var(--mut);font-size:.8rem}.reason{color:var(--ac)!important}
+.poster{padding:0;border-radius:10px;overflow:hidden;width:100%;aspect-ratio:2/3;position:relative;background:var(--panel)}.poster img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:6px;bottom:6px;background:#000b;color:#fff;border-radius:6px;padding:0 .4rem;font-size:.75rem}
+.actions{position:absolute;top:6px;right:6px;display:flex;flex-direction:column;gap:4px}.actions button{padding:.15rem .5rem;background:#000a;color:#fff}
+dialog{max-width:880px;width:calc(100% - 2rem);background:var(--bg);color:var(--fg);border:1px solid #8886;border-radius:16px;padding:1.25rem}dialog::backdrop{background:#000a}
+.detail{display:grid;grid-template-columns:200px 1fr;gap:1.25rem}.detail img{width:100%;border-radius:10px}.meta{color:var(--mut)}.x{float:right}
+.prefs{background:var(--panel);padding:.75rem;border-radius:12px;margin-bottom:.75rem}.prefs fieldset{border:0;display:flex;flex-wrap:wrap;gap:.25rem .9rem}.prefs label{font-size:.85rem}
+@media(max-width:600px){.detail{grid-template-columns:1fr}.grid.small{grid-template-columns:repeat(2,1fr)}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
